@@ -1,7 +1,7 @@
-Wed Nov 27 16:14:52 EST 2019 : Apache Derby Network Server - 10.14.1.0 - (???) started and ready to accept connections on port 1527
+Sat Nov 30 15:07:37 EST 2019 : Apache Derby Network Server - 10.14.1.0 - (???) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Wed Nov 27 16:20:01 EST 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (???): instance a816c00e-016e-aeb7-8253-00000b266808 
+Sat Nov 30 15:07:43 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (???): instance a816c00e-016e-bded-05be-00000b266808 
 on database directory /home/fei/Documents/19Fall/Testing/project/lms/Database/LMS with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1affbebc 
 Loaded from file:/usr/share/java/derby.jar
 java.vendor=Ubuntu
