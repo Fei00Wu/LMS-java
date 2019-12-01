@@ -17,7 +17,7 @@ public class Main
 
     // Asking for Input as Choice
     public static int takeInput(int min, int max)
-    {    
+    {
         String choice;
         Scanner input = new Scanner(System.in);        
         
@@ -254,10 +254,7 @@ public class Main
         System.out.println("\nPress any key to continue..\n");
         scanner.next();
     }
-    
-    
-    
-    
+
    
     
     /*-------------------------------------MAIN---------------------------------------------------*/

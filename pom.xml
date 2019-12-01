@@ -21,13 +21,19 @@
             <artifactId>derbyclient</artifactId>
             <version>10.2.2.0</version>
         </dependency>
-        <!-- JUnit dependency -->
+        <!-- StringUtils dependency -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.5.1</version>
-            <scope>test</scope>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
         </dependency>
+        <!-- JUnit dependency -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.5.2</version>
+                <scope>test</scope>
+            </dependency>
         <!-- Mockito dependency -->
         <dependency>
             <groupId>org.mockito</groupId>

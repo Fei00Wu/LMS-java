@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoEmptyRecords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoNormal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNoUpdate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Borrower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/ClerkUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/ClerkUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/LibrianUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/LibrianUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/StaffUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/StaffUnitTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +27,16 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="963" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,26 +52,29 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UBWlhuNBdgck0SFzcomUiembkV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW3/HW3_Part2/mock/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW1/project/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LMS.Main" />
+  <component name="RunManager" selected="JUnit.BorrowerUnitTest">
+    <configuration name="BorrowerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -54,15 +82,97 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BorrowerUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowerUnitTest.printInfoEmptyRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BorrowerUnitTest" />
+      <option name="METHOD_NAME" value="printInfoEmptyRecords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowerUnitTest.printInfoNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BorrowerUnitTest" />
+      <option name="METHOD_NAME" value="printInfoNormal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowerUnitTest.removeHoldRequestRepeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BorrowerUnitTest" />
+      <option name="METHOD_NAME" value="removeHoldRequestRepeated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaffUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.StaffUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BorrowerUnitTest" />
+        <item itemvalue="JUnit.BorrowerUnitTest.printInfoNormal" />
+        <item itemvalue="JUnit.BorrowerUnitTest.printInfoEmptyRecords" />
+        <item itemvalue="JUnit.BorrowerUnitTest.removeHoldRequestRepeated" />
+        <item itemvalue="JUnit.StaffUnitTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,26 +192,128 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.sql/java/sql/DriverManager.class</url>
-          <line>309</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.sql/java/sql/DriverManager.class</url>
-          <line>314</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="136" width="1000" height="839" key="#Project_Structure" timestamp="1575229247242">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575229247242" />
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575236929168">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575236929168" />
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1575148537215">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575148537215" />
+    <state x="439" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575229257661">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="439" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575229257661" />
+    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575176314338">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.34.1920.1046@0.34.1920.1046" timestamp="1575176314338" />
+    <state width="933" height="554" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog" timestamp="1575167387788">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="933" height="554" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575167387788" />
+    <state x="488" y="279" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1575167387787">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="488" y="279" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575167387787" />
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575166220338">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575166220338" />
+    <state width="1864" height="831" key="GridCell.Tab.0.bottom" timestamp="1575237019223">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="831" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575237019223" />
+    <state width="1864" height="831" key="GridCell.Tab.0.center" timestamp="1575237019221">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="831" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575237019221" />
+    <state width="1864" height="831" key="GridCell.Tab.0.left" timestamp="1575237019220">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="831" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575237019220" />
+    <state width="1864" height="831" key="GridCell.Tab.0.right" timestamp="1575237019222">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="831" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575237019222" />
+    <state width="1864" height="570" key="GridCell.Tab.1.bottom" timestamp="1575236414009">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="570" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575236414009" />
+    <state width="1864" height="570" key="GridCell.Tab.1.center" timestamp="1575236414008">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="570" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575236414008" />
+    <state width="1864" height="570" key="GridCell.Tab.1.left" timestamp="1575236414008">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="570" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575236414008" />
+    <state width="1864" height="570" key="GridCell.Tab.1.right" timestamp="1575236414009">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="570" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575236414009" />
+    <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575233241691" />
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1575229280437">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1575229280437" />
+    <state width="960" height="524" key="XDebugger.FullValuePopup" timestamp="1575235593272">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="960" height="524" key="XDebugger.FullValuePopup/0.34.1920.1046@0.34.1920.1046" timestamp="1575235593272" />
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575228589006">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575228589006" />
+    <state x="431" y="180" width="1057" height="752" key="find.popup" timestamp="1575167407703">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="431" y="180" width="1057" height="752" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575167407703" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1575175645042">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575175645042" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lms$StaffUnitTest_getPasswordNormal.ic" NAME="StaffUnitTest.getPasswordNormal Coverage Results" MODIFIED="1575165130512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$ClerkUnitTest.ic" NAME="ClerkUnitTest Coverage Results" MODIFIED="1575228046525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerUnitTest Coverage Results" MODIFIED="1575236989352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$ClerkUnitTest_clerkPrintInfo.ic" NAME="ClerkUnitTest.clerkPrintInfo Coverage Results" MODIFIED="1575168577999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_borrowerConstructorTests.ic" NAME="BorrowerUnitTest.borrowerConstructorTests Coverage Results" MODIFIED="1575171085020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$LibrianUnitTest.ic" NAME="LibrianUnitTest Coverage Results" MODIFIED="1575228064690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$StaffUnitTest.ic" NAME="StaffUnitTest Coverage Results" MODIFIED="1575228075861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
   </component>
 </project>

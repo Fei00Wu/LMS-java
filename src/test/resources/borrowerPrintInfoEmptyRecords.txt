@@ -1,0 +1,13 @@
+-----------------------------------------
+
+The details are:
+
+ID: 0
+Name: Borrower in test
+Address:
+Phone No: 0
+
+
+No borrowed books. 
+ 
+No On Hold books. 

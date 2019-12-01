@@ -154,16 +154,4 @@ public class Loan
         System.out.println("Issued Book is successfully renewed!\n");
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    
 }   // Loan class Closed

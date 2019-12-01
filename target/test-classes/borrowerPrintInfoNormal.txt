@@ -1,0 +1,23 @@
+-----------------------------------------
+
+The details are:
+
+ID: 0
+Name: Borrower in test
+Address: 
+Phone No: 0
+
+
+Borrowed Books are:
+------------------------------------------------------------------------------
+No.		Title			Author			Subject
+------------------------------------------------------------------------------
+0-		dummyBook			dummySubject			dummySubject
+
+
+On Hold Books are: 
+------------------------------------------------------------------------------
+No.		Title			Author			Subject
+------------------------------------------------------------------------------
+0-		dummyBook			dummySubject			dummySubject
+
