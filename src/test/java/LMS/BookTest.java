@@ -12,12 +12,14 @@ import static org.mockito.Mockito.*;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.lang.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.GregorianCalendar;
 
-public class BookUnitTest {
+public class BookTest {
 
     static private String pathToResources = "src/test/resources/";
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
@@ -260,12 +262,112 @@ public class BookUnitTest {
     @Test
     public void issueBookSuccess(){
         Library mockLib = mock(Library.class);
+
         bookInTest.issueBook(dummyBorrower, dummyStaff);
         // verify(mockLib).addLoan(any());  // Assert loan recorded in the library -  Doesn't work with singleton
         assertFalse(dummyBorrower.getBorrowedBooks().isEmpty()); // Assert borrower has the book in their record
         assertTrue(bookInTest.getIssuedStatus());
 
     }
+
+    @DisplayName("issueBook: add hold request of book - no older request")
+    @Test
+    public void issueBookAddHoldRequestNoOldHR(){
+        ByteArrayInputStream inStream = new ByteArrayInputStream("y\n".getBytes());
+        System.setIn(inStream);
+        bookInTest.setIssuedStatus(true);
+        bookInTest.issueBook(dummyBorrower, dummyStaff);
+        assertEquals(1, bookInTest.getHoldRequests().size());
+    }
+
+    @ParameterizedTest(name="issueBook: issued, new Borrower request HR: {0}")
+    @CsvSource({
+            "n",
+            "y"
+    })
+    public void issueBookIssued(String userInput){
+        int expected;
+        HoldRequest oldHoldRequest = new HoldRequest(dummyBorrower, bookInTest,
+                new GregorianCalendar(2019, Calendar.OCTOBER, 31).getTime());
+        Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
+
+        ByteArrayInputStream inStream = new ByteArrayInputStream((userInput + "\n").getBytes());
+        System.setIn(inStream);
+
+        bookInTest.setIssuedStatus(true);
+        bookInTest.addHoldRequest(oldHoldRequest); // Will be reomved
+        bookInTest.issueBook(newBorrower, dummyStaff);
+
+        if (userInput == "y")
+            expected = 1;
+        else
+            expected = 0;
+
+        assertEquals(expected, bookInTest.getHoldRequests().size());
+    }
+
+
+    @ParameterizedTest(name="issueBook: issue=false, other borrower has HR, new Borrower request HR: {0}")
+    @CsvSource({
+            "n",
+            "y"
+    })
+    public void issueBookOtherHoldRequestExists(String userInput){
+        Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
+        int expected = 0;
+
+        ByteArrayInputStream inStream = new ByteArrayInputStream((userInput + "\n").getBytes());
+        System.setIn(inStream);
+
+        bookInTest.addHoldRequest(dummyHoldRequest);
+        bookInTest.issueBook(newBorrower, dummyStaff);
+
+        if (userInput == "y")
+            expected = 1;
+        else
+            expected = 0;
+        assertEquals(expected, newBorrower.getOnHoldBooks().size());
+    }
+
+    @DisplayName("issueBook: Not issued, and the borrower has HR earlier")
+    @Test
+    public void issueBookHadHoldRequestEarlier(){
+        Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
+
+        bookInTest.addHoldRequest(dummyHoldRequest);
+        bookInTest.issueBook(dummyBorrower, dummyStaff);
+        assertEquals(0, bookInTest.getHoldRequests().size());
+        assertEquals(1, dummyBorrower.getBorrowedBooks().size());
+        assertTrue(bookInTest.getIssuedStatus());
+    }
+
+
+    @DisplayName("issueBook: Not issued, borrower has HR, but others have earlier HR")
+    @Test
+    public void issueBookNotEarliestHR(){
+        Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
+        HoldRequest newHoldRequest = new HoldRequest(newBorrower, bookInTest, new Date());
+        String expected = cleanString("\nSorry some other users have requested for this book earlier than you. " +
+                "So you have to wait until their hold requests are processed.\n"), actual;
+
+        bookInTest.addHoldRequest(dummyHoldRequest);
+        bookInTest.addHoldRequest(newHoldRequest);
+
+        bookInTest.issueBook(newBorrower, dummyStaff);
+
+        actual = cleanString(outStream.toString());
+        assertEquals(expected, actual);
+        assertEquals(0, newBorrower.getBorrowedBooks().size());
+    }
+
+    @DisplayName("returnBook: Normal")
+    @Test
+    public void returnBookNormal(){
+        bookInTest.issueBook(dummyBorrower, dummyStaff);
+        bookInTest.returnBook(dummyBorrower,dummyBorrower.getBorrowedBooks().get(0), dummyStaff);
+        assertEquals(0, dummyBorrower.getBorrowedBooks().size());
+    }
+
 
     static String cleanString(String str) {
         String newStr = str

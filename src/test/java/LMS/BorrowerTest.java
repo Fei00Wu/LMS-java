@@ -18,7 +18,7 @@ import java.nio.file.Paths;
 // Extra string utils
 import org.apache.commons.lang3.StringUtils;
 
-public class BorrowerUnitTest {
+public class BorrowerTest {
     static String pathToResources = "src/test/resources/";
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;

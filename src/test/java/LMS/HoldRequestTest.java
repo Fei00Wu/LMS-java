@@ -17,7 +17,7 @@ import java.lang.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class HoldRequestUnitTest {
+public class HoldRequestTest {
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 

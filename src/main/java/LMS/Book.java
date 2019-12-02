@@ -283,7 +283,6 @@ public class Book {
                     System.out.println("\nSome users have already placed this book on request and you haven't, so the book can't be issued to you.");
                     
                     System.out.println("Would you like to place the book on hold? (y/n)");
-
                     Scanner sc = new Scanner(System.in);
                     String choice = sc.next();
                     

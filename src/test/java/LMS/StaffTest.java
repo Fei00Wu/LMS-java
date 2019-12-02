@@ -13,7 +13,7 @@ import java.io.PrintStream;
 // Java Random
 import java.util.Random;
 
-public class StaffUnitTest {
+public class StaffTest {
     private Staff staffInTest = new Staff(-1, "staff", "", 0, 0.0);;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
