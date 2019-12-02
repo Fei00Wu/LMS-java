@@ -285,13 +285,80 @@ public class BorrowerUnitTest {
         assertEquals(expectedUI, actualUI);
     }
 
+    @ParameterizedTest(name="updateBorrowerInfo: Legal inputs - {0}")
+    @CsvSource({
+            "updateBorrowerInfoNoUpdates.txt",
+            "updateBorrowerInfoName.txt",
+            "updateBorrowerInfoAddress.txt",
+            "updateBorrowerInfoPhone.txt",
+            "updateBorrowerInfoNameAddress.txt",
+            "updateBorrowerInfoNamePhone.txt",
+            "updateBorrowerInfoAddressPhone.txt",
+            "updateBorrowerInfoNameAddressPhone.txt"
+    })
+    public void updateBorrowerInfoLegalInputs(String resourceFile)
+    {
+        String inputContent = readFromResource(resourceFile);
+        ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
+        System.setIn(inStream);
 
+        Borrower equivalentBorrower = updateInfoParseResource(inputContent, borrowerInTest);
+        try {
+            borrowerInTest.updateBorrowerInfo();
+        }
+        catch (Exception e) {
+            printInTest(e.getMessage());
+        }
 
+        assertEquals(borrowerInTest.name, equivalentBorrower.name, "Name should match");
+        assertEquals(borrowerInTest.address, equivalentBorrower.address, "Address should match");
+        assertEquals(borrowerInTest.phoneNo, equivalentBorrower.phoneNo, "Phone should match");
+    }
+
+    @ParameterizedTest(name="updateBorrowerInfo: Illegal inputs - {0}")
+    @CsvSource({
+
+    })
+    public void updateBorrowerInfoIllegalInputs(String resourceFile)
+    {
+        String inputContent = readFromResource(resourceFile);
+        ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
+        System.setIn(inStream);
+
+        Borrower equivalentBorrower = updateInfoParseResource(inputContent, borrowerInTest);
+
+        assertEquals(borrowerInTest.name, equivalentBorrower.name, "Name should match");
+        assertEquals(borrowerInTest.address, equivalentBorrower.address, "Address should match");
+        assertEquals(borrowerInTest.phoneNo, equivalentBorrower.phoneNo, "Phone should match");
+    }
+
+    @Test
+    public void testInputStream() {
+        System.setIn(readFromResourceAsStream("updateBorrowerInfoAddress.txt"));
+        String addBefore = borrowerInTest.address;
+        try {
+            borrowerInTest.updateBorrowerInfo();
+        }
+        catch (Exception e) {
+            e.getMessage();
+        }
+        assertEquals(borrowerInTest.address, "Homewood");
+    }
 
     private void printInTest(String content) {
         System.setOut(originalOut);
         System.out.println(content);
         System.setOut(new PrintStream(outStream));
+    }
+
+    private InputStream readFromResourceAsStream(String filename) {
+        try {
+            return Files.newInputStream(Paths.get(pathToResources + filename));
+        }
+        catch (IOException e) {
+            printInTest(e.getMessage());
+        }
+        return new ByteArrayInputStream(new byte[0]);
     }
 
     private String readFromResource(String fileName) {
@@ -305,6 +372,31 @@ public class BorrowerUnitTest {
             printInTest(e.getMessage());
         }
         return content;
+    }
+
+
+    private Borrower updateInfoParseResource(String content, Borrower b) {
+        String name = b.name, address = b.address;
+        int phone = b.phoneNo;
+        String lines[] = content.split("\\r?\\n");
+        printInTest("");
+        int index = 0;
+        if(lines[index] == "y") {
+            index++;
+            name = lines[index];
+        }
+        index++;
+        if(lines[index] == "y") {
+            index++;
+            address = lines[index];
+        }
+        index++;
+        if(lines[index] == "y") {
+            index++;
+            phone = Integer.parseInt(lines[index]);
+        }
+        Borrower equivalentBorrower = new Borrower(-1, name, address, phone);
+        return equivalentBorrower;
     }
 
     private String slurp(InputStream in) {

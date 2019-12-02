@@ -8,6 +8,7 @@ public class Borrower extends Person
 {    
     private ArrayList<Loan> borrowedBooks;          //Those books which are currently borrowed by this borrower
     private ArrayList<HoldRequest> onHoldBooks;    //Those books which are currently requested by this borrower to be on hold
+
     
     
     public Borrower(int id,String n, String a, int p) // para. cons
@@ -106,12 +107,7 @@ public class Borrower extends Person
         System.out.println("\nDo you want to update " + getName() + "'s Phone Number ? (y/n)");  
         choice = sc.next();  
 
-        if(choice.equals("y")){
-        super.printInfo();
-
-        printBorrowedBooks();
-        printOnHoldBooks();
-    }
+        if(choice.equals("y"))
         {
             System.out.println("\nType New Phone Number: ");
             setPhone(sc.nextInt());
