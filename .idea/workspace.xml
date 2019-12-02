@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubject.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubjectTitle.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorTitle.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoNoChange.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubject.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubjectTitle.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoTitle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/holdRequestPrintNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/bookPrintHoldRequestNormal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LMS/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LMS/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BookUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BookUnitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/holdRequestPrintNormal.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +16,7 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="900" />
+    <option name="myElementSize" value="909" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW1/project/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW3/HW3_Part2/mock/src/test/java/cs422/hw3/part2/CustomerTest.java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -73,7 +60,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookUnitTest.bookConstructorTests">
+  <component name="RunManager" selected="JUnit.BookUnitTest.issueBookSuccess">
     <configuration name="BookUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
@@ -121,6 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookUnitTest.issueBookSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
+      <option name="METHOD_NAME" value="issueBookSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookUnitTest.printHoldRequestNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
@@ -137,29 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookUnitTest.printHoldRequestsNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
-      <option name="METHOD_NAME" value="printHoldRequestsNormal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookUnitTest.issueBookSuccess" />
         <item itemvalue="JUnit.BookUnitTest.bookConstructorTests" />
         <item itemvalue="JUnit.BookUnitTest.changeBookInfoTests" />
         <item itemvalue="JUnit.BookUnitTest" />
         <item itemvalue="JUnit.BookUnitTest.printHoldRequestNormal" />
-        <item itemvalue="JUnit.BookUnitTest.printHoldRequestsNormal" />
       </list>
     </recent_temporary>
   </component>
@@ -237,42 +224,42 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="488" y="279" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575167387787" />
-    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575166220338">
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575258539363">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575166220338" />
-    <state width="1864" height="725" key="GridCell.Tab.0.bottom" timestamp="1575257575306">
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575258539363" />
+    <state width="1864" height="725" key="GridCell.Tab.0.bottom" timestamp="1575259687810">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="725" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
-    <state width="1864" height="725" key="GridCell.Tab.0.center" timestamp="1575257575306">
+    <state width="1864" height="725" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575259687810" />
+    <state width="1864" height="725" key="GridCell.Tab.0.center" timestamp="1575259687809">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="725" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
-    <state width="1864" height="725" key="GridCell.Tab.0.left" timestamp="1575257575305">
+    <state width="1864" height="725" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575259687809" />
+    <state width="1864" height="725" key="GridCell.Tab.0.left" timestamp="1575259687808">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="725" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575305" />
-    <state width="1864" height="725" key="GridCell.Tab.0.right" timestamp="1575257575306">
+    <state width="1864" height="725" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575259687808" />
+    <state width="1864" height="725" key="GridCell.Tab.0.right" timestamp="1575259687810">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="725" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
-    <state width="1864" height="282" key="GridCell.Tab.1.bottom" timestamp="1575257363013">
+    <state width="1864" height="725" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575259687810" />
+    <state width="1864" height="426" key="GridCell.Tab.1.bottom" timestamp="1575259296647">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="282" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363013" />
-    <state width="1864" height="282" key="GridCell.Tab.1.center" timestamp="1575257363012">
+    <state width="1864" height="426" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575259296647" />
+    <state width="1864" height="426" key="GridCell.Tab.1.center" timestamp="1575259296646">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="282" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363012" />
-    <state width="1864" height="282" key="GridCell.Tab.1.left" timestamp="1575257363012">
+    <state width="1864" height="426" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575259296646" />
+    <state width="1864" height="426" key="GridCell.Tab.1.left" timestamp="1575259296646">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="282" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363012" />
-    <state width="1864" height="282" key="GridCell.Tab.1.right" timestamp="1575257363013">
+    <state width="1864" height="426" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575259296646" />
+    <state width="1864" height="426" key="GridCell.Tab.1.right" timestamp="1575259296646">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="282" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363013" />
+    <state width="1864" height="426" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575259296646" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -309,6 +296,9 @@
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$HoldRequestUnitTest.ic" NAME="HoldRequestUnitTest Coverage Results" MODIFIED="1575249206999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookSuccess.ic" NAME="BookUnitTest.issueBookSuccess Coverage Results" MODIFIED="1575258907919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerUnitTest Coverage Results" MODIFIED="1575246319877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

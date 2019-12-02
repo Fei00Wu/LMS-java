@@ -1,10 +1,12 @@
 package LMS;
 // JUnit5
 import org.junit.jupiter.api.*;
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+// Mockito
+import static org.mockito.Mockito.*;
 
 // Java standard
 import java.io.*;
@@ -40,6 +42,7 @@ public class BookUnitTest {
         dummyLoan = new Loan(dummyBorrower, bookInTest, dummyStaff,
                 null, new Date(), null, false);
         dummyHoldRequest = new HoldRequest(dummyBorrower, bookInTest, new Date());
+
     }
 
     @AfterEach
@@ -253,7 +256,16 @@ public class BookUnitTest {
         assertEquals(bookInTest.getAuthor(), equivalentBook.getAuthor(), "Author should match");
     }
 
+    @DisplayName("issueBook: Successful issue")
+    @Test
+    public void issueBookSuccess(){
+        Library mockLib = mock(Library.class);
+        bookInTest.issueBook(dummyBorrower, dummyStaff);
+        // verify(mockLib).addLoan(any());  // Assert loan recorded in the library -  Doesn't work with singleton
+        assertFalse(dummyBorrower.getBorrowedBooks().isEmpty()); // Assert borrower has the book in their record
+        assertTrue(bookInTest.getIssuedStatus());
 
+    }
 
     static String cleanString(String str) {
         String newStr = str
