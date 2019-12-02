@@ -8,7 +8,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 // Java standard
 import java.io.*;
-import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Date;
 import java.lang.*;
@@ -19,7 +18,7 @@ import java.nio.file.Paths;
 import org.apache.commons.lang3.StringUtils;
 
 public class BorrowerUnitTest {
-    static String pathToResources = "src/test/resources/";
+    static private String pathToResources = "src/test/resources/";
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
     private final InputStream originalIn = System.in;
@@ -315,6 +314,7 @@ public class BorrowerUnitTest {
         assertEquals(borrowerInTest.phoneNo, equivalentBorrower.phoneNo, "Phone should match");
     }
 
+
     private void printInTest(String content) {
         System.setOut(originalOut);
         System.out.println(content);
@@ -343,7 +343,6 @@ public class BorrowerUnitTest {
         }
         return content;
     }
-
 
     private Borrower updateInfoParseResource(String content, Borrower b) {
         String name = b.name, address = b.address;
