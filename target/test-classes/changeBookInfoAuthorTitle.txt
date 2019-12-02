@@ -1,5 +1,0 @@
-y
-MyName
-n
-y
-BookName

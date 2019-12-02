@@ -1,6 +1,0 @@
-y
-real borrower
-y
-a house
-y
-3670864
