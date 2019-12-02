@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddress.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddressPhone.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoName.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddress.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddressPhone.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNamePhone.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNoUpdates.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoPhone.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Borrower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNoUpdate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LMS/Borrower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LMS/Borrower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LMS/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LMS/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +15,7 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="963" />
+    <option name="myElementSize" value="965" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,7 +59,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BorrowerUnitTest.updateBorrowerInfoTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LMS.Main" />
       <module name="lms" />
@@ -142,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BorrowerUnitTest.updateBorrowerInfoNoUpdates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BorrowerUnitTest.updateBorrowerInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -152,7 +130,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
       <option name="MAIN_CLASS_NAME" value="LMS.BorrowerUnitTest" />
-      <option name="METHOD_NAME" value="updateBorrowerInfoNoUpdates" />
+      <option name="METHOD_NAME" value="updateBorrowerInfoTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BorrowerUnitTest.testInputStream" />
-        <item itemvalue="JUnit.BorrowerUnitTest.updateBorrowerInfoLegalInputs" />
+        <item itemvalue="JUnit.BorrowerUnitTest.updateBorrowerInfoTest" />
         <item itemvalue="JUnit.BorrowerUnitTest" />
-        <item itemvalue="JUnit.BorrowerUnitTest.updateBorrowerInfoNoUpdates" />
+        <item itemvalue="JUnit.BorrowerUnitTest.testInputStream" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BorrowerUnitTest.updateBorrowerInfoLegalInputs" />
       </list>
     </recent_temporary>
   </component>
@@ -214,10 +192,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575229247242" />
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575236929168">
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575246424607">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575236929168" />
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575246424607" />
     <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1575148537215">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -242,38 +220,38 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575166220338" />
-    <state width="1864" height="431" key="GridCell.Tab.0.bottom" timestamp="1575246195075">
+    <state width="1864" height="727" key="GridCell.Tab.0.bottom" timestamp="1575246425604">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="431" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575246195075" />
-    <state width="1864" height="431" key="GridCell.Tab.0.center" timestamp="1575246195073">
+    <state width="1864" height="727" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575246425604" />
+    <state width="1864" height="727" key="GridCell.Tab.0.center" timestamp="1575246425602">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="431" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575246195073" />
-    <state width="1864" height="431" key="GridCell.Tab.0.left" timestamp="1575246195072">
+    <state width="1864" height="727" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575246425602" />
+    <state width="1864" height="727" key="GridCell.Tab.0.left" timestamp="1575246425601">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="431" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575246195072" />
-    <state width="1864" height="431" key="GridCell.Tab.0.right" timestamp="1575246195074">
+    <state width="1864" height="727" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575246425601" />
+    <state width="1864" height="727" key="GridCell.Tab.0.right" timestamp="1575246425603">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="431" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575246195074" />
-    <state width="1864" height="184" key="GridCell.Tab.1.bottom" timestamp="1575245797297">
+    <state width="1864" height="727" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575246425603" />
+    <state width="1864" height="603" key="GridCell.Tab.1.bottom" timestamp="1575246314244">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="184" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575245797297" />
-    <state width="1864" height="184" key="GridCell.Tab.1.center" timestamp="1575245797295">
+    <state width="1864" height="603" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314244" />
+    <state width="1864" height="603" key="GridCell.Tab.1.center" timestamp="1575246314243">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="184" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575245797295" />
-    <state width="1864" height="184" key="GridCell.Tab.1.left" timestamp="1575245797294">
+    <state width="1864" height="603" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314243" />
+    <state width="1864" height="603" key="GridCell.Tab.1.left" timestamp="1575246314242">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="184" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575245797294" />
-    <state width="1864" height="184" key="GridCell.Tab.1.right" timestamp="1575245797296">
+    <state width="1864" height="603" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314242" />
+    <state width="1864" height="603" key="GridCell.Tab.1.right" timestamp="1575246314244">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="184" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575245797296" />
+    <state width="1864" height="603" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314244" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -299,17 +277,6 @@
     </state>
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575175645042" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LMS/Borrower.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_updateBorrowerInfoNoUpdates.ic" NAME="BorrowerUnitTest.updateBorrowerInfoNoUpdates Coverage Results" MODIFIED="1575239130417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
@@ -320,7 +287,7 @@
     <SUITE FILE_PATH="coverage/lms$ClerkUnitTest.ic" NAME="ClerkUnitTest Coverage Results" MODIFIED="1575228046525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerUnitTest Coverage Results" MODIFIED="1575236989352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerUnitTest Coverage Results" MODIFIED="1575246319877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$ClerkUnitTest_clerkPrintInfo.ic" NAME="ClerkUnitTest.clerkPrintInfo Coverage Results" MODIFIED="1575168577999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

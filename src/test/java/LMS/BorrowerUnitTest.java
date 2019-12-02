@@ -285,7 +285,7 @@ public class BorrowerUnitTest {
         assertEquals(expectedUI, actualUI);
     }
 
-    @ParameterizedTest(name="updateBorrowerInfo: Legal inputs - {0}")
+    @ParameterizedTest(name="updateBorrowerInfo:  {0}")
     @CsvSource({
             "updateBorrowerInfoNoUpdates.txt",
             "updateBorrowerInfoName.txt",
@@ -296,7 +296,7 @@ public class BorrowerUnitTest {
             "updateBorrowerInfoAddressPhone.txt",
             "updateBorrowerInfoNameAddressPhone.txt"
     })
-    public void updateBorrowerInfoLegalInputs(String resourceFile)
+    public void updateBorrowerInfoTest(String resourceFile)
     {
         String inputContent = readFromResource(resourceFile);
         ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
@@ -313,36 +313,6 @@ public class BorrowerUnitTest {
         assertEquals(borrowerInTest.name, equivalentBorrower.name, "Name should match");
         assertEquals(borrowerInTest.address, equivalentBorrower.address, "Address should match");
         assertEquals(borrowerInTest.phoneNo, equivalentBorrower.phoneNo, "Phone should match");
-    }
-
-    @ParameterizedTest(name="updateBorrowerInfo: Illegal inputs - {0}")
-    @CsvSource({
-
-    })
-    public void updateBorrowerInfoIllegalInputs(String resourceFile)
-    {
-        String inputContent = readFromResource(resourceFile);
-        ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
-        System.setIn(inStream);
-
-        Borrower equivalentBorrower = updateInfoParseResource(inputContent, borrowerInTest);
-
-        assertEquals(borrowerInTest.name, equivalentBorrower.name, "Name should match");
-        assertEquals(borrowerInTest.address, equivalentBorrower.address, "Address should match");
-        assertEquals(borrowerInTest.phoneNo, equivalentBorrower.phoneNo, "Phone should match");
-    }
-
-    @Test
-    public void testInputStream() {
-        System.setIn(readFromResourceAsStream("updateBorrowerInfoAddress.txt"));
-        String addBefore = borrowerInTest.address;
-        try {
-            borrowerInTest.updateBorrowerInfo();
-        }
-        catch (Exception e) {
-            e.getMessage();
-        }
-        assertEquals(borrowerInTest.address, "Homewood");
     }
 
     private void printInTest(String content) {
