@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/HoldRequestUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/holdRequestPrintNormal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubjectTitle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorTitle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoNoChange.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubjectTitle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/changeBookInfoTitle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/holdRequestPrintNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/bookPrintHoldRequestNormal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LMS/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LMS/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BookUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BookUnitTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BorrowerUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/holdRequestPrintNormal.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +29,7 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="965" />
+    <option name="myElementSize" value="900" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,8 +73,8 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HoldRequestUnitTest">
-    <configuration name="HoldRequestUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookUnitTest.bookConstructorTests">
+    <configuration name="BookUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -71,13 +83,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.HoldRequestUnitTest" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoldRequestUnitTest.constructorNullDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookUnitTest.bookConstructorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -86,14 +98,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.HoldRequestUnitTest" />
-      <option name="METHOD_NAME" value="constructorNullDate" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
+      <option name="METHOD_NAME" value="bookConstructorTests(int,java.lang.String,java.lang.String,java.lang.String,boolean)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoldRequestUnitTest.printNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookUnitTest.changeBookInfoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -102,14 +114,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.HoldRequestUnitTest" />
-      <option name="METHOD_NAME" value="printNormal" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
+      <option name="METHOD_NAME" value="changeBookInfoTests(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoldRequestUnitTest.printNullBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookUnitTest.printHoldRequestNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -118,14 +130,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.HoldRequestUnitTest" />
-      <option name="METHOD_NAME" value="printNullBook" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
+      <option name="METHOD_NAME" value="printHoldRequestNormal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoldRequestUnitTest.printNullBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookUnitTest.printHoldRequestsNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -134,8 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.HoldRequestUnitTest" />
-      <option name="METHOD_NAME" value="printNullBorrower" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookUnitTest" />
+      <option name="METHOD_NAME" value="printHoldRequestsNormal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HoldRequestUnitTest" />
-        <item itemvalue="JUnit.HoldRequestUnitTest.printNullBorrower" />
-        <item itemvalue="JUnit.HoldRequestUnitTest.printNullBook" />
-        <item itemvalue="JUnit.HoldRequestUnitTest.printNormal" />
-        <item itemvalue="JUnit.HoldRequestUnitTest.constructorNullDate" />
+        <item itemvalue="JUnit.BookUnitTest.bookConstructorTests" />
+        <item itemvalue="JUnit.BookUnitTest.changeBookInfoTests" />
+        <item itemvalue="JUnit.BookUnitTest" />
+        <item itemvalue="JUnit.BookUnitTest.printHoldRequestNormal" />
+        <item itemvalue="JUnit.BookUnitTest.printHoldRequestsNormal" />
       </list>
     </recent_temporary>
   </component>
@@ -197,10 +209,14 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575229247242" />
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575248815139">
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575257019629">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575248815139" />
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575257019629" />
+    <state x="521" y="343" width="867" height="425" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575256687635">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="521" y="343" width="867" height="425" key="#com.intellij.fileTypes.FileTypeChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575256687635" />
     <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser" timestamp="1575148537215">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -225,38 +241,38 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575166220338" />
-    <state width="1864" height="727" key="GridCell.Tab.0.bottom" timestamp="1575249212255">
+    <state width="1864" height="725" key="GridCell.Tab.0.bottom" timestamp="1575257575306">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="727" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575249212255" />
-    <state width="1864" height="727" key="GridCell.Tab.0.center" timestamp="1575249212252">
+    <state width="1864" height="725" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
+    <state width="1864" height="725" key="GridCell.Tab.0.center" timestamp="1575257575306">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="727" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575249212252" />
-    <state width="1864" height="727" key="GridCell.Tab.0.left" timestamp="1575249212250">
+    <state width="1864" height="725" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
+    <state width="1864" height="725" key="GridCell.Tab.0.left" timestamp="1575257575305">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="727" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575249212250" />
-    <state width="1864" height="727" key="GridCell.Tab.0.right" timestamp="1575249212253">
+    <state width="1864" height="725" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575305" />
+    <state width="1864" height="725" key="GridCell.Tab.0.right" timestamp="1575257575306">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="727" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575249212253" />
-    <state width="1864" height="603" key="GridCell.Tab.1.bottom" timestamp="1575246314244">
+    <state width="1864" height="725" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575257575306" />
+    <state width="1864" height="282" key="GridCell.Tab.1.bottom" timestamp="1575257363013">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="603" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314244" />
-    <state width="1864" height="603" key="GridCell.Tab.1.center" timestamp="1575246314243">
+    <state width="1864" height="282" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363013" />
+    <state width="1864" height="282" key="GridCell.Tab.1.center" timestamp="1575257363012">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="603" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314243" />
-    <state width="1864" height="603" key="GridCell.Tab.1.left" timestamp="1575246314242">
+    <state width="1864" height="282" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363012" />
+    <state width="1864" height="282" key="GridCell.Tab.1.left" timestamp="1575257363012">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="603" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314242" />
-    <state width="1864" height="603" key="GridCell.Tab.1.right" timestamp="1575246314244">
+    <state width="1864" height="282" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363012" />
+    <state width="1864" height="282" key="GridCell.Tab.1.right" timestamp="1575257363013">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="603" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575246314244" />
+    <state width="1864" height="282" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575257363013" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -298,7 +314,13 @@
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerUnitTest Coverage Results" MODIFIED="1575246319877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest.ic" NAME="BookUnitTest Coverage Results" MODIFIED="1575257248453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/lms$ClerkUnitTest_clerkPrintInfo.ic" NAME="ClerkUnitTest.clerkPrintInfo Coverage Results" MODIFIED="1575168577999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_bookConstructorTests.ic" NAME="BookUnitTest.bookConstructorTests Coverage Results" MODIFIED="1575257570881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_borrowerConstructorTests.ic" NAME="BorrowerUnitTest.borrowerConstructorTests Coverage Results" MODIFIED="1575171085020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

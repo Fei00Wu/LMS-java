@@ -16,8 +16,7 @@ public class Book {
  
     static int currentIdNumber = 0;     //This will be unique for every book, since it will be incremented when everytime
                                         //when a book is created
-    
-  
+
     public Book(int id,String t, String s, String a, boolean issued)    // Parameterise cons.
     {
         currentIdNumber++;
@@ -161,8 +160,6 @@ public class Book {
         currentIdNumber = n;
     }
     
-
-    
     
     //-------------------------------------------------------------------//
     
@@ -176,8 +173,6 @@ public class Book {
         
         System.out.println("\nThe book " + title + " has been successfully placed on hold by borrower " + bor.getName() + ".\n");
     }
-    
-    
 
 
    // Request for Holding a Book
@@ -194,8 +189,6 @@ public class Book {
                 return;                
             }
         }
-        
-        
         //If that borrower has already requested for that particular book. Then he isn't allowed to make the same request again.
         for (int i = 0; i < holdRequests.size(); i++)
         {
@@ -215,14 +208,13 @@ public class Book {
     }
 
     
-    // Gertting Info of a Hold Request
+    // Getting Info of a Hold Request
     public void serviceHoldRequest(HoldRequest hr)
     {
         removeHoldRequest();
         hr.getBorrower().removeHoldRequest(hr);
     }
 
-    
         
     // Issuing a Book
     public void issueBook(Borrower borrower, Staff staff)

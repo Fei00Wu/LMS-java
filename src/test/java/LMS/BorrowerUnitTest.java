@@ -8,6 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 // Java standard
 import java.io.*;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Date;
 import java.lang.*;
@@ -18,7 +19,7 @@ import java.nio.file.Paths;
 import org.apache.commons.lang3.StringUtils;
 
 public class BorrowerUnitTest {
-    static private String pathToResources = "src/test/resources/";
+    static String pathToResources = "src/test/resources/";
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
     private final InputStream originalIn = System.in;
