@@ -1,6 +1,6 @@
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/BorrowerUnitTest.java
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/ClerkUnitTest.java
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/HoldRequestUnitTest.java
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/LibrianUnitTest.java
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/StaffUnitTest.java
-/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/BookUnitTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/BookTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/HoldRequestTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/ClerkTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/BorrowerTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/LibrarianTest.java
+/home/fei/Documents/19Fall/Testing/project/lms/src/test/java/LMS/StaffTest.java

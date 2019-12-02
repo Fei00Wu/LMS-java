@@ -49,7 +49,7 @@ public class HoldRequestTest {
 
     @DisplayName("HoldRequest Constructor: Normal")
     @Test
-    public void constructorNormal(){
+    public void constructorNormalTest(){
         Date today = new Date();
         HoldRequest hr = new HoldRequest(dummyBorrower, dummyBook, today);
         assertEquals(dummyBorrower, hr.getBorrower());
@@ -60,7 +60,7 @@ public class HoldRequestTest {
 
     @DisplayName("HoldRequest Constructor: Null borrower")
     @Test
-    public void constructorNullBorrower(){
+    public void constructorNullBorrowerTest(){
         Date today = new Date();
         assertThrows(Exception.class, ()->{
             HoldRequest hr = new HoldRequest(null, dummyBook, today);
@@ -69,7 +69,7 @@ public class HoldRequestTest {
 
     @DisplayName("HoldRequest Constructor: Null book")
     @Test
-    public void constructorNullBook(){
+    public void constructorNullBookTest(){
         Date today = new Date();
         assertThrows(Exception.class, ()->{
             HoldRequest hr = new HoldRequest(dummyBorrower, null, today);
@@ -78,7 +78,7 @@ public class HoldRequestTest {
 
     @DisplayName("HoldRequest Constructor: Null date")
     @Test
-    public void constructorNullDate(){
+    public void constructorNullDateTest(){
         Date today = new Date();
         assertThrows(Exception.class, ()->{
             HoldRequest hr = new HoldRequest(dummyBorrower, dummyBook, null);
@@ -87,7 +87,7 @@ public class HoldRequestTest {
 
     @DisplayName("print: Normal")
     @Test
-    public void printNormal(){
+    public void printNormalTest(){
         String expected = holdRequestInTest.getBook().getTitle() + "\t\t\t\t"
                 + holdRequestInTest.getBorrower().getName() +"\t\t\t\t"
                 + holdRequestInTest.getRequestDate() + "\n";
@@ -97,7 +97,7 @@ public class HoldRequestTest {
 
     @DisplayName("print: Null book")
     @Test
-    public void printNullBook(){
+    public void printNullBookTest(){
         Date stamp = new Date();
         HoldRequest hr = new HoldRequest(dummyBorrower, null, stamp);
         String expected = "\t\t\t\t"
@@ -109,7 +109,7 @@ public class HoldRequestTest {
 
     @DisplayName("print: Null borrower")
     @Test
-    public void printNullBorrower(){
+    public void printNullBorrowerTest(){
         Date stamp = new Date();
         HoldRequest hr = new HoldRequest(null, dummyBook, stamp);
         String expected = dummyBook.getTitle() +  "\t\t\t\t"

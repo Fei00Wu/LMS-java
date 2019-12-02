@@ -36,7 +36,7 @@ public class StaffTest {
 
     @DisplayName("setIDCount: repetitive ID caused by setIDCount")
     @Test
-    public void setIDRepeatedID() {
+    public void setIDRepeatedIDTest() {
         Staff staffAlice = new Staff(-1, "Alice", "address", 0, 0.0);
         staffAlice.setIDCount(staffAlice.getID() - 1);
         Staff staffBob = new Staff(-1, "Bob", "address", 0, 0.0);
@@ -47,7 +47,7 @@ public class StaffTest {
 
     @DisplayName("Repetitive ID caused by manually assign ID")
     @Test
-    public void repetitiveManulID(){
+    public void repetitiveManulIDTest(){
         Staff staffAlice = new Staff(3, "Alice", "Homewood", 123, 1.00);
         Staff staffBob = new Staff(3, "Bob", "Towson", 456, 1.00);
         assertNotEquals(staffAlice.getID(), staffBob.getID());
@@ -64,7 +64,7 @@ public class StaffTest {
             "2, staff2, Home, 456, 0",
             "3, staff3, Home, 789, -25"
     })
-    public void staffConstructorTests(
+    public void staffConstructorTest(
             int id, String name, String address, int phone, double salary
     ){
         Staff currStaff;
@@ -79,13 +79,13 @@ public class StaffTest {
 
     @DisplayName("getName: Normal")
     @Test
-    public void getNameNormal() {
+    public void getNameNormalTest() {
         assertEquals("staff", staffInTest.getName());
     }
 
     @DisplayName("getName: empty names")
     @Test
-    public void getNameEmptyNames() {
+    public void getNameEmptyNamesTest() {
         staffInTest = new Staff(-1, "", "", 0, 0.0);
         assertEquals("", staffInTest.getName());
 
@@ -95,14 +95,14 @@ public class StaffTest {
 
     @DisplayName("setName: normal")
     @Test
-    public void setNameNormal(){
+    public void setNameNormalTest(){
         staffInTest.setName("super staff");
         assertEquals("super staff", staffInTest.getName());
     }
 
     @DisplayName("setName: empty names")
     @Test
-    public void setNameEmptyNames(){
+    public void setNameEmptyNamesTest(){
         staffInTest.setName("");
         assertEquals("", staffInTest.getName());
 
@@ -113,20 +113,20 @@ public class StaffTest {
 
     @DisplayName("getAddress: empty address")
     @Test
-    public void getAddressEmptyAddress() {
+    public void getAddressEmptyAddressTest() {
         assertEquals("", staffInTest.getAddress());
     }
 
     @DisplayName("getAddress:  normal")
     @Test
-    public void getAddressNormal(){
+    public void getAddressNormalTest(){
         staffInTest = new Staff(5, "staff", "Somewhere", 123456, 0.0);
         assertEquals("Somewhere", staffInTest.getAddress());
     }
 
     @DisplayName("setAddress: empty address")
     @Test
-    public void setAddressEmptyAddress(){
+    public void setAddressEmptyAddressTest(){
         staffInTest.setAddress("");
         assertEquals("", staffInTest.getAddress());
 
@@ -138,14 +138,14 @@ public class StaffTest {
 
     @DisplayName("setPhone: Normal")
     @Test
-    public void setPhoneNormal() {
+    public void setPhoneNormalTest() {
         staffInTest.setPhone(123);
         assertEquals(123, staffInTest.getPhoneNumber());
     }
 
     @DisplayName("PrintInfo: Normal")
     @Test
-    public void printInfoNormal(){
+    public void printInfoNormalTest(){
         String expected;
         expected = "-----------------------------------------"
                 + "\n\nThe details are: \n\n"
@@ -160,7 +160,7 @@ public class StaffTest {
 
     @DisplayName("PrintInfo: Null name")
     @Test
-    public void printInfoNullName(){
+    public void printInfoNullNameTest(){
         String expected;
         staffInTest.setName(null);
         expected = "-----------------------------------------"
@@ -176,7 +176,7 @@ public class StaffTest {
 
     @DisplayName("PrintInfo: Null Address")
     @Test
-    public void printInfoNullAddress(){
+    public void printInfoNullAddressTest(){
         String expected;
         staffInTest.setAddress(null);
         expected = "-----------------------------------------"
@@ -192,13 +192,13 @@ public class StaffTest {
 
     @DisplayName("getPassword: normal")
     @Test
-    public void getPasswordNormal(){
+    public void getPasswordNormalTest(){
         assertEquals(Integer.toString(staffInTest.getID()), staffInTest.getPassword());
     }
 
     @DisplayName("getSalary")
     @Test
-    public void getSalary(){
+    public void getSalaryTest(){
         Random randomGenerator = new Random();
         double maxSalary = 500, minSalary = -500, currSalary = 0;
 

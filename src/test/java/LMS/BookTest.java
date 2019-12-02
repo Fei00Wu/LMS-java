@@ -34,7 +34,7 @@ public class BookTest {
     private HoldRequest dummyHoldRequest;
 
     @BeforeEach
-    public void setupStream(){
+    public void setupStream() {
         System.setOut(new PrintStream(outStream));
 
         dummyBorrower = new Borrower(0, "dummyBorrower", "", 0);
@@ -48,7 +48,7 @@ public class BookTest {
     }
 
     @AfterEach
-    public void restoreStreams(){
+    public void restoreStreams() {
         System.setOut(originalOut);
         System.setIn(originalIn);
         bookInTest.setIDCount(0);
@@ -67,9 +67,9 @@ public class BookTest {
             "2, book2, subject2, author2, true",
             "3, book3, subject3, author3, false"
     })
-    public void bookConstructorTests(
+    public void testbookConstructor(
             int id, String title, String subject, String author, boolean issued
-    ){
+    ) {
         Book currBook = new Book(id, title, subject, author, issued);
 
         assertTrue(currBook.getHoldRequests().isEmpty());
@@ -82,7 +82,7 @@ public class BookTest {
 
     @DisplayName("Book constructor: repeated id")
     @Test
-    public void bookConstructorRepeatedID(){
+    public void testBookConstructorRepeatedID() {
         Book repeatedBook = new Book(0, "tiile", "subject", "authors", false);
         assertNotEquals(bookInTest.getID(),
                 repeatedBook.getID(), "Should not allow books to have the same id");
@@ -90,7 +90,7 @@ public class BookTest {
 
     @DisplayName("Book setIDCount: Normal")
     @Test
-    public void booksetIDCountNormal(){
+    public void testBooksetIDCountNormal() {
         bookInTest.setIDCount(5);
         Book newBook = new Book(-1, "","", "", false);
         assertEquals(newBook.getID(), 6);
@@ -98,7 +98,7 @@ public class BookTest {
 
     @DisplayName("addHoldRequest: Normal")
     @Test
-    public void addHoldRequestNormal(){
+    public void testAddHoldRequestNormal() {
         HoldRequest[] addedHoldReqquest = new HoldRequest[10];
         ArrayList<HoldRequest> allHoldReqquest;
         bookInTest.setIssuedStatus(true);
@@ -118,7 +118,7 @@ public class BookTest {
 
     @DisplayName("addHoldRequest: Not issued")
     @Test
-    public void addHoldRequestNotIssued(){
+    public void testAddHoldRequestNotIssued() {
         bookInTest.setIssuedStatus(false);
         assertThrows(Exception.class, ()->{
            bookInTest.addHoldRequest(dummyHoldRequest); 
@@ -127,7 +127,7 @@ public class BookTest {
 
     @DisplayName("addHoldRequest: Different Book")
     @Test
-    public void addHoldRequestDifferentBook(){
+    public void testAddHoldRequestDifferentBook() {
         Book diffBook = new Book(-1, "Another Book", "Another Subject", 
                 "Another Author", true);
         HoldRequest hr = new HoldRequest(dummyBorrower, diffBook, new Date());
@@ -142,7 +142,7 @@ public class BookTest {
 
     @DisplayName("addHoldRequest: Null hold request")
     @Test
-    public void addHoldRequestNullRequest(){
+    public void testAddHoldRequestNullRequest() {
         int before, after;
         before = bookInTest.getHoldRequests().size();
         bookInTest.setIssuedStatus(true);
@@ -153,7 +153,7 @@ public class BookTest {
 
     @DisplayName("removeHoldRequest: Normal")
     @Test
-    public void removeHoldRequestNormal(){
+    public void testRemoveHoldRequestNormal() {
         bookInTest.setIssuedStatus(true);
         bookInTest.addHoldRequest(dummyHoldRequest);
         bookInTest.removeHoldRequest();
@@ -162,7 +162,7 @@ public class BookTest {
 
     @DisplayName("removeHoldRequest: Empty list")
     @Test
-    public void removeHoldRequestEmptyList(){
+    public void testRemoveHoldRequestEmptyList() {
         bookInTest.removeHoldRequest();
         assertTrue(bookInTest.getHoldRequests().isEmpty());
     }
@@ -170,7 +170,7 @@ public class BookTest {
 
     @DisplayName("makeHoldRequest: Normal")
     @Test
-    public void makeHoldRequestNormal(){
+    public void testMakeHoldRequestNormal() {
         bookInTest.makeHoldRequest(dummyBorrower);
         ArrayList<HoldRequest> hr = bookInTest.getHoldRequests();
         assertEquals(hr.get(0).borrower, dummyBorrower);
@@ -178,7 +178,7 @@ public class BookTest {
 
     @DisplayName("makeHoldRequest: Already borrowed")
     @Test
-    public void makeHoldRequestBorrowed(){
+    public void testMakeHoldRequestBorrowed() {
         int before, after;
         Loan loanForThis = new Loan(dummyBorrower, bookInTest, dummyStaff,
                 null, new Date(), null, false);
@@ -192,7 +192,7 @@ public class BookTest {
 
     @DisplayName("makeHoldRequest: Already held")
     @Test
-    public void makeHoldRequestHeld(){
+    public void testakeHoldRequestHeld() {
         int before, after;
         HoldRequest hr = new HoldRequest(dummyBorrower, bookInTest, new Date());
         dummyBorrower.addHoldRequest(hr);
@@ -206,7 +206,7 @@ public class BookTest {
 
     @DisplayName("printHoldRequests: Empty list")
     @Test
-    public void printHoldRequestsEmpty(){
+    public void testrintHoldRequestsEmpty() {
         String expected, actual;
         expected = cleanString("\nNo Hold Requests.");
 
@@ -218,7 +218,7 @@ public class BookTest {
 
     @DisplayName("printHoldRequests: Normal")
     @Test
-    public void printHoldRequestNormal(){
+    public void testrintHoldRequestNormal() {
         String expected, actual;
         bookInTest.makeHoldRequest(dummyBorrower);
         bookInTest.printHoldRequests();
@@ -240,7 +240,7 @@ public class BookTest {
             "changeBookInfoSubjectTitle.txt",
             "changeBookInfoAuthorSubjectTitle.txt"
     })
-    public void changeBookInfoTests(String resourceFile){
+    public void testChangeBookInfo(String resourceFile) {
         String inputContent = readFromResource(resourceFile);
         ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
         System.setIn(inStream);
@@ -260,7 +260,7 @@ public class BookTest {
 
     @DisplayName("issueBook: Successful issue")
     @Test
-    public void issueBookSuccess(){
+    public void testIssueBookSuccess() {
         Library mockLib = mock(Library.class);
 
         bookInTest.issueBook(dummyBorrower, dummyStaff);
@@ -272,7 +272,7 @@ public class BookTest {
 
     @DisplayName("issueBook: add hold request of book - no older request")
     @Test
-    public void issueBookAddHoldRequestNoOldHR(){
+    public void testIssueBookAddHoldRequestNoOldHR() {
         ByteArrayInputStream inStream = new ByteArrayInputStream("y\n".getBytes());
         System.setIn(inStream);
         bookInTest.setIssuedStatus(true);
@@ -285,7 +285,7 @@ public class BookTest {
             "n",
             "y"
     })
-    public void issueBookIssued(String userInput){
+    public void testIssueBookIssued(String userInput) {
         int expected;
         HoldRequest oldHoldRequest = new HoldRequest(dummyBorrower, bookInTest,
                 new GregorianCalendar(2019, Calendar.OCTOBER, 31).getTime());
@@ -312,7 +312,7 @@ public class BookTest {
             "n",
             "y"
     })
-    public void issueBookOtherHoldRequestExists(String userInput){
+    public void testIssueBookOtherHoldRequestExists(String userInput) {
         Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
         int expected = 0;
 
@@ -331,7 +331,7 @@ public class BookTest {
 
     @DisplayName("issueBook: Not issued, and the borrower has HR earlier")
     @Test
-    public void issueBookHadHoldRequestEarlier(){
+    public void testIssueBookHadHoldRequestEarlier() {
         Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
 
         bookInTest.addHoldRequest(dummyHoldRequest);
@@ -344,7 +344,7 @@ public class BookTest {
 
     @DisplayName("issueBook: Not issued, borrower has HR, but others have earlier HR")
     @Test
-    public void issueBookNotEarliestHR(){
+    public void testIssueBookNotEarliestHR() {
         Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
         HoldRequest newHoldRequest = new HoldRequest(newBorrower, bookInTest, new Date());
         String expected = cleanString("\nSorry some other users have requested for this book earlier than you. " +
@@ -362,7 +362,7 @@ public class BookTest {
 
     @DisplayName("returnBook: Normal")
     @Test
-    public void returnBookNormal(){
+    public void testReturnBookNormal() {
         bookInTest.issueBook(dummyBorrower, dummyStaff);
         bookInTest.returnBook(dummyBorrower,dummyBorrower.getBorrowedBooks().get(0), dummyStaff);
         assertEquals(0, dummyBorrower.getBorrowedBooks().size());

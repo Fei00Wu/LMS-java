@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: LMS.BookTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 0.396 sec <<< FAILURE!
+LMS.BookTest.testAddHoldRequestNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testAddHoldRequestNormal(BookTest.java:104)
+
+LMS.BookTest.testRemoveHoldRequestNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testRemoveHoldRequestNormal(BookTest.java:157)
+
+LMS.BookTest.testIssueBookSuccess()  Time elapsed: 0.388 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testIssueBookSuccess(BookTest.java:266)
+
+LMS.BookTest.testIssueBookAddHoldRequestNoOldHR()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testIssueBookAddHoldRequestNoOldHR(BookTest.java:278)
+
+LMS.BookTest.testIssueBookHadHoldRequestEarlier()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testIssueBookHadHoldRequestEarlier(BookTest.java:337)
+
+LMS.BookTest.testIssueBookNotEarliestHR()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testIssueBookNotEarliestHR(BookTest.java:353)
+
+LMS.BookTest.testReturnBookNormal()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testReturnBookNormal(BookTest.java:366)
+
+LMS.BookTest.testBookConstructorRepeatedID()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testBookConstructorRepeatedID(BookTest.java:87)
+
+LMS.BookTest.testAddHoldRequestNotIssued()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testAddHoldRequestNotIssued(BookTest.java:122)
+
+LMS.BookTest.testAddHoldRequestDifferentBook()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testAddHoldRequestDifferentBook(BookTest.java:136)
+
+LMS.BookTest.testAddHoldRequestNullRequest()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testAddHoldRequestNullRequest(BookTest.java:147)
+
+LMS.BookTest.testRemoveHoldRequestEmptyList()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testRemoveHoldRequestEmptyList(BookTest.java:166)
+
+LMS.BookTest.testMakeHoldRequestNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testMakeHoldRequestNormal(BookTest.java:174)
+
+LMS.BookTest.testMakeHoldRequestBorrowed()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testMakeHoldRequestBorrowed(BookTest.java:185)
+
+LMS.BookTest.testakeHoldRequestHeld()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testakeHoldRequestHeld(BookTest.java:198)
+
+LMS.BookTest.testrintHoldRequestsEmpty()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testrintHoldRequestsEmpty(BookTest.java:213)
+
+LMS.BookTest.testrintHoldRequestNormal()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BookTest.testrintHoldRequestNormal(BookTest.java:223)
+

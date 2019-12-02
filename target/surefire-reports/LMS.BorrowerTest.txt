@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: LMS.BorrowerTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec <<< FAILURE!
+LMS.BorrowerTest.testRemoveBorrowedBookEmptyListTest()  Time elapsed: 0.023 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.IllegalStateException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:65)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952)
+	at LMS.BorrowerTest.testRemoveBorrowedBookEmptyListTest(BorrowerTest.java:141)
+Caused by: java.lang.NullPointerException
+	at LMS.BorrowerTest.lambda$testRemoveBorrowedBookEmptyListTest$0(BorrowerTest.java:142)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55)
+	... 21 more
+
+LMS.BorrowerTest.testRemoveBorremoveBorrowedBookRepeated()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveBorremoveBorrowedBookRepeated(BorrowerTest.java:164)
+
+LMS.BorrowerTest.testAddBorrowedBookNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testAddBorrowedBookNormal(BorrowerTest.java:89)
+
+LMS.BorrowerTest.testAddBorrowedBookNull()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testAddBorrowedBookNull(BorrowerTest.java:101)
+
+LMS.BorrowerTest.testAddBorrowedBookRepetitiveLoans()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testAddBorrowedBookRepetitiveLoans(BorrowerTest.java:113)
+
+LMS.BorrowerTest.testRemoveBorrowedBookNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveBorrowedBookNormal(BorrowerTest.java:127)
+
+LMS.BorrowerTest.testRemoveBorrowedBookNull()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveBorrowedBookNull(BorrowerTest.java:152)
+
+LMS.BorrowerTest.testAddHoldRequestNormal()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testAddHoldRequestNormal(BorrowerTest.java:181)
+
+LMS.BorrowerTest.testAddHoldRequestRepeated()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testAddHoldRequestRepeated(BorrowerTest.java:203)
+
+LMS.BorrowerTest.testRemoveHoldRequestNormal()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveHoldRequestNormal(BorrowerTest.java:217)
+
+LMS.BorrowerTest.testRemoveHoldRequestNull()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveHoldRequestNull(BorrowerTest.java:238)
+
+LMS.BorrowerTest.testRemoveHoldRequestRepeated()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testRemoveHoldRequestRepeated(BorrowerTest.java:250)
+
+LMS.BorrowerTest.testPrintInfoNormal()  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testPrintInfoNormal(BorrowerTest.java:265)
+
+LMS.BorrowerTest.testPrintInfoEmptyRecords()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at LMS.BorrowerTest.testPrintInfoEmptyRecords(BorrowerTest.java:281)
+

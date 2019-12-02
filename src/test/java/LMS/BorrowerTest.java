@@ -67,7 +67,7 @@ public class BorrowerTest {
             "2, staff2, Home, 456",
             "3, staff3, Home, 789"
     })
-    public void borrowerConstructorTests(
+    public void testBorrowerConstructor(
             int id, String name, String address, int phone
     ){
         Borrower currBorrower = new Borrower(id, name, address, phone);
@@ -85,7 +85,7 @@ public class BorrowerTest {
 
     @DisplayName("addBorrowedBook: normal")
     @Test
-    public void addBorrowedBookNormal() {
+    public void testAddBorrowedBookNormal() {
         int after, before = borrowerInTest.getBorrowedBooks().size();
 
         borrowerInTest.addBorrowedBook(dummyLoan);
@@ -97,7 +97,7 @@ public class BorrowerTest {
 
     @DisplayName("addBorrowedBook: null")
     @Test
-    public void addBorrowedBookNull() {
+    public void testAddBorrowedBookNull() {
         int after, before = borrowerInTest.getBorrowedBooks().size();
 
         borrowerInTest.addBorrowedBook(null);
@@ -109,7 +109,7 @@ public class BorrowerTest {
 
     @DisplayName("addBorrowedBook: repetitive loans")
     @Test
-    public void addBorrowedBookRepetitiveLoans() {
+    public void testAddBorrowedBookRepetitiveLoans() {
         int after, before = borrowerInTest.getBorrowedBooks().size();
 
         for (int i = 0; i < 10; i++)
@@ -123,7 +123,7 @@ public class BorrowerTest {
 
     @DisplayName("removeBorrowedBook: normal")
     @Test
-    public void removeBorrowedBookNormal() {
+    public void testRemoveBorrowedBookNormal() {
         int before = borrowerInTest.getBorrowedBooks().size(), after;
         for (int i = 0; i < 10; i++) {
             borrowerInTest.addBorrowedBook(dummyLoan);
@@ -137,7 +137,7 @@ public class BorrowerTest {
 
     @DisplayName("removeBorrowedBook: remove while no borrowed book")
     @Test
-    public void removeBorrowedBookEmptyList(){
+    public void testRemoveBorrowedBookEmptyListTest() {
         assertThrows(IllegalStateException.class, () ->{
             borrowerInTest.removeBorrowedBook(dummyLoan);
         });
@@ -145,7 +145,7 @@ public class BorrowerTest {
 
     @DisplayName("removeBorrowedBook: remove null ")
     @Test
-    public void removeBorrowedBookNull(){
+    public void testRemoveBorrowedBookNull() {
         Loan dummy = null;
         int before, after;
 
@@ -159,7 +159,7 @@ public class BorrowerTest {
 
     @DisplayName("removeBorrowedBook: remove repeated loans")
     @Test
-    public void removeBorremoveBorrowedBookRepeated() {
+    public void testRemoveBorremoveBorrowedBookRepeated() {
         int before, after;
         before = borrowerInTest.getBorrowedBooks().size();
         for(int i = 0; i < 10; i++) {
@@ -173,7 +173,7 @@ public class BorrowerTest {
 
     @DisplayName("addHoldRequest: Normal")
     @Test
-    public void addHoldRequestNormal() {
+    public void testAddHoldRequestNormal() {
         int before, after;
         HoldRequest currHoldRequest;
         HoldRequest[] allHoldRequests = new HoldRequest[10];
@@ -190,7 +190,7 @@ public class BorrowerTest {
 
     @DisplayName("addHoldRequest: Null")
     @Test
-    public void addHoldRequestNull() {
+    public void testAddHoldRequestNull() {
         assertThrows(NullPointerException.class, () -> {
             borrowerInTest.addHoldRequest(null);
         });
@@ -198,7 +198,7 @@ public class BorrowerTest {
 
     @DisplayName("addHoldRequest: Repeated")
     @Test
-    public void addHoldRequestRepeated() {
+    public void testAddHoldRequestRepeated() {
         int before, after;
         before = borrowerInTest.getOnHoldBooks().size();
         for (int i = 0; i < 10; i++)
@@ -209,7 +209,7 @@ public class BorrowerTest {
 
     @DisplayName("removeHoldRequest: normal")
     @Test
-    public void removeHoldRequestNormal(){
+    public void testRemoveHoldRequestNormal(){
         int before, after;
         HoldRequest currHoldRequest;
         HoldRequest[] allHoldRequests = new HoldRequest[10];
@@ -232,7 +232,7 @@ public class BorrowerTest {
 
     @DisplayName("removeHoldRequest: Null")
     @Test
-    public void removeHoldRequestNull(){
+    public void testRemoveHoldRequestNull() {
         int before, after;
         HoldRequest hr = null;
         before = borrowerInTest.getOnHoldBooks().size();
@@ -244,7 +244,7 @@ public class BorrowerTest {
 
     @DisplayName("removeHoldRequest: Repeated hold requestes")
     @Test
-    public void removeHoldRequestRepeated(){
+    public void testRemoveHoldRequestRepeated() {
         int before, after;
         HoldRequest hr = null;
         before = borrowerInTest.getOnHoldBooks().size();
@@ -257,7 +257,7 @@ public class BorrowerTest {
 
     @DisplayName("printInfo: Normal")
     @Test
-    public void printInfoNormal() {
+    public void testPrintInfoNormal() {
         String expectedUI = "", actualUI;
         expectedUI = readFromResource("borrowerPrintInfoNormal.txt")
                 .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "");
@@ -273,7 +273,7 @@ public class BorrowerTest {
 
     @DisplayName("printInfo: Empty records")
     @Test
-    public void printInfoEmptyRecords() {
+    public void testPrintInfoEmptyRecords() {
         String expectedUI = "", actualUI;
         expectedUI = readFromResource("borrowerPrintInfoEmptyRecords.txt")
                 .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "");
@@ -296,7 +296,7 @@ public class BorrowerTest {
             "updateBorrowerInfoAddressPhone.txt",
             "updateBorrowerInfoNameAddressPhone.txt"
     })
-    public void updateBorrowerInfoTest(String resourceFile)
+    public void testUpdateBorrowerInfo(String resourceFile)
     {
         String inputContent = readFromResource(resourceFile);
         ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());

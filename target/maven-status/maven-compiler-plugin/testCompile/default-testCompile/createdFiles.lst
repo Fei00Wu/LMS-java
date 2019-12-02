@@ -1,6 +1,6 @@
-LMS/ClerkUnitTest.class
-LMS/LibrianUnitTest.class
-LMS/BorrowerUnitTest.class
-LMS/StaffUnitTest.class
-LMS/BookUnitTest.class
-LMS/HoldRequestUnitTest.class
+LMS/LibrarianTest.class
+LMS/HoldRequestTest.class
+LMS/BookTest.class
+LMS/BorrowerTest.class
+LMS/StaffTest.class
+LMS/ClerkTest.class

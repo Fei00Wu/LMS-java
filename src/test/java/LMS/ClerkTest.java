@@ -24,7 +24,7 @@ public class ClerkTest {
             "-1, clerk6, Home, 456, 0, 2",
             "-1, clerk7, Home, 789, -25, 3"
     })
-    public void clerkConstructorTests(
+    public void clerkConstructorTest(
             int id, String name, String address, int phone, double salary, int desk
     ){
         Clerk currClerk = new Clerk(id, name, address, phone, salary, desk);
@@ -42,7 +42,7 @@ public class ClerkTest {
             "2, clerk2, Home, 456, 0, 2",
             "3, clerk3, Home, 789, -25, 3"
     })
-    public void clerkPrintInfo(
+    public void clerkPrintInfoTest(
             int id, String name, String address, int phone, double salary, int desk
     ){
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
