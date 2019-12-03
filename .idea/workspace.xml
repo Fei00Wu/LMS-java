@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Database/LMS/log/log2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/LoanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LMS.BookTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LMS.BookTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LMS.BorrowerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LMS.BorrowerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LMS.HoldRequestTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LMS.HoldRequestTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LMS.BookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LMS.BookTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LMS.BorrowerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LMS.BorrowerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LMS/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LMS/BookTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +26,7 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="526" />
+    <option name="myElementSize" value="779" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,14 +64,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest">
-    <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoanTest">
+    <configuration name="LoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -75,13 +81,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.issBookIssuedNullBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanTest.payFineNonZero (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -90,14 +96,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
-      <option name="METHOD_NAME" value="issBookIssuedNullBorrower(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
+      <option name="METHOD_NAME" value="payFineNonZero(double,int,char,double)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.returnBookNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanTest.renewIssuedBookNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +112,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
-      <option name="METHOD_NAME" value="returnBookNormal" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
+      <option name="METHOD_NAME" value="renewIssuedBookNormal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.returnBookWithFine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanTest.renewIssuedBookNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +128,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
-      <option name="METHOD_NAME" value="returnBookWithFine(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
+      <option name="METHOD_NAME" value="renewIssuedBookNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.returnBookWrongBorrower" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanTest.setFineStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
-      <option name="METHOD_NAME" value="returnBookWrongBorrower" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
+      <option name="METHOD_NAME" value="setFineStatus(boolean)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookTest" />
-        <item itemvalue="JUnit.BookTest.returnBookWithFine" />
-        <item itemvalue="JUnit.BookTest.returnBookWrongBorrower" />
-        <item itemvalue="JUnit.BookTest.returnBookNormal" />
-        <item itemvalue="JUnit.BookTest.issBookIssuedNullBorrower" />
+        <item itemvalue="JUnit.LoanTest" />
+        <item itemvalue="JUnit.LoanTest.renewIssuedBookNull" />
+        <item itemvalue="JUnit.LoanTest.renewIssuedBookNormal" />
+        <item itemvalue="JUnit.LoanTest.setFineStatus" />
+        <item itemvalue="JUnit.LoanTest.payFineNonZero (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -201,10 +207,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575229247242" />
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575325754356">
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575355056651">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575325754356" />
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575355056651" />
     <state x="521" y="343" width="867" height="425" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575256687635">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -213,6 +219,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="721" y="201" width="468" height="710" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575148537215" />
+    <state x="640" y="272" width="630" height="567" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575330091146">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="640" y="272" width="630" height="567" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575330091146" />
     <state x="439" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575229257661">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -237,58 +247,62 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575324669767" />
-    <state width="1864" height="400" key="GridCell.Tab.0.bottom" timestamp="1575329487852">
+    <state width="1864" height="812" key="GridCell.Tab.0.bottom" timestamp="1575356234445">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="400" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575329487852" />
-    <state width="1864" height="400" key="GridCell.Tab.0.center" timestamp="1575329487850">
+    <state width="1864" height="812" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234445" />
+    <state width="1864" height="812" key="GridCell.Tab.0.center" timestamp="1575356234442">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="400" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575329487850" />
-    <state width="1864" height="400" key="GridCell.Tab.0.left" timestamp="1575329487849">
+    <state width="1864" height="812" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234442" />
+    <state width="1864" height="812" key="GridCell.Tab.0.left" timestamp="1575356234441">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="400" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575329487849" />
-    <state width="1864" height="400" key="GridCell.Tab.0.right" timestamp="1575329487851">
+    <state width="1864" height="812" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234441" />
+    <state width="1864" height="812" key="GridCell.Tab.0.right" timestamp="1575356234444">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="400" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575329487851" />
-    <state width="1864" height="423" key="GridCell.Tab.1.bottom" timestamp="1575329328681">
+    <state width="1864" height="812" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234444" />
+    <state width="1864" height="209" key="GridCell.Tab.1.bottom" timestamp="1575355301318">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="423" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575329328681" />
-    <state width="1864" height="423" key="GridCell.Tab.1.center" timestamp="1575329328680">
+    <state width="1864" height="209" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301318" />
+    <state width="1864" height="209" key="GridCell.Tab.1.center" timestamp="1575355301317">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="423" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575329328680" />
-    <state width="1864" height="423" key="GridCell.Tab.1.left" timestamp="1575329328679">
+    <state width="1864" height="209" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
+    <state width="1864" height="209" key="GridCell.Tab.1.left" timestamp="1575355301317">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="423" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575329328679" />
-    <state width="1864" height="423" key="GridCell.Tab.1.right" timestamp="1575329328681">
+    <state width="1864" height="209" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
+    <state width="1864" height="209" key="GridCell.Tab.1.right" timestamp="1575355301317">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="423" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575329328681" />
+    <state width="1864" height="209" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575233241691" />
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1575324074608">
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1575330064202">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1575324074608" />
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1575330064202" />
     <state width="960" height="524" key="XDebugger.FullValuePopup" timestamp="1575235593272">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="960" height="524" key="XDebugger.FullValuePopup/0.34.1920.1046@0.34.1920.1046" timestamp="1575235593272" />
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575228589006">
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575354592928">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575228589006" />
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575354592928" />
     <state x="431" y="180" width="1057" height="752" key="find.popup" timestamp="1575167407703">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="431" y="180" width="1057" height="752" key="find.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575167407703" />
+    <state x="540" y="251" key="run.anything.popup" timestamp="1575355667822">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="540" y="251" key="run.anything.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575355667822" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1575175645042">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -304,31 +318,19 @@
     <SUITE FILE_PATH="coverage/lms$ClerkUnitTest.ic" NAME="ClerkUnitTest Coverage Results" MODIFIED="1575228046525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BookUnitTest_returnBookNormal.ic" NAME="BookUnitTest.returnBookNormal Coverage Results" MODIFIED="1575316792207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>LMS.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/lms$HoldRequestUnitTest.ic" NAME="HoldRequestUnitTest Coverage Results" MODIFIED="1575249206999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$HoldRequestTest.ic" NAME="HoldRequestTest Coverage Results" MODIFIED="1575323638533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$HoldRequestTest.ic" NAME="HoldRequestTest Coverage Results" MODIFIED="1575339508476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookSuccess.ic" NAME="BookUnitTest.issueBookSuccess Coverage Results" MODIFIED="1575258907919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$StaffTest.ic" NAME="StaffTest Coverage Results" MODIFIED="1575339535505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575323591111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$ClerkTest.ic" NAME="ClerkTest Coverage Results" MODIFIED="1575339493500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$LibrianUnitTest.ic" NAME="LibrianUnitTest Coverage Results" MODIFIED="1575228064690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>LMS.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookNotEarliestHR.ic" NAME="BookUnitTest.issueBookNotEarliestHR Coverage Results" MODIFIED="1575312050969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>LMS.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/lms$ClerkTest.ic" NAME="ClerkTest Coverage Results" MODIFIED="1575323625959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>LMS.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/lms$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1575323673102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1575339521067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BookUnitTest.ic" NAME="BookTest Coverage Results" MODIFIED="1575329478796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -337,16 +339,49 @@
     <SUITE FILE_PATH="coverage/lms$ClerkUnitTest_clerkPrintInfo.ic" NAME="ClerkUnitTest.clerkPrintInfo Coverage Results" MODIFIED="1575168577999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BookUnitTest_bookConstructorTests.ic" NAME="BookUnitTest.bookConstructorTests Coverage Results" MODIFIED="1575257570881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_borrowerConstructorTests.ic" NAME="BorrowerUnitTest.borrowerConstructorTests Coverage Results" MODIFIED="1575171085020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_borrowerConstructorTests.ic" NAME="BorrowerUnitTest.borrowerConstructorTests Coverage Results" MODIFIED="1575171085020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$LoanTest_renewIssuedBookNormal.ic" NAME="LoanTest.renewIssuedBookNormal Coverage Results" MODIFIED="1575356165316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_returnBookNormal.ic" NAME="BookUnitTest.returnBookNormal Coverage Results" MODIFIED="1575316792207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$LoanTest_setFineStatus.ic" NAME="LoanTest.setFineStatus Coverage Results" MODIFIED="1575355692860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookSuccess.ic" NAME="BookUnitTest.issueBookSuccess Coverage Results" MODIFIED="1575258907919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575323591111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$LoanTest.ic" NAME="LoanTest Coverage Results" MODIFIED="1575356230109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$LoanTest_renewIssuedBookNull.ic" NAME="LoanTest.renewIssuedBookNull Coverage Results" MODIFIED="1575356176867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$LibrianUnitTest.ic" NAME="LibrianUnitTest Coverage Results" MODIFIED="1575228064690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BorrowerTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575339479030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookNotEarliestHR.ic" NAME="BookUnitTest.issueBookNotEarliestHR Coverage Results" MODIFIED="1575312050969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookUnitTest_bookConstructorTests.ic" NAME="BookUnitTest.bookConstructorTests Coverage Results" MODIFIED="1575257570881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BookTest_issueBookIssued.ic" NAME="BookTest.issueBookIssued Coverage Results" MODIFIED="1575326175761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$StaffUnitTest.ic" NAME="StaffTest Coverage Results" MODIFIED="1575323654856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$BookTest.ic" NAME="BookTest Coverage Results" MODIFIED="1575339558020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
   </component>

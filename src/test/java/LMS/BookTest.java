@@ -436,7 +436,6 @@ public class BookTest {
         assertEquals(expected, overDueLoan.getFineStatus());
     }
 
-
     static String cleanString(String str) {
         String newStr = str
                 .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "")
