@@ -10,13 +10,10 @@ import static org.mockito.Mockito.*;
 
 // Java standard
 import java.io.*;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.lang.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.GregorianCalendar;
 
 public class BookTest {
@@ -25,6 +22,7 @@ public class BookTest {
     private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
     private final InputStream originalIn = System.in;
+    private uiUtils helper = new uiUtils(pathToResources, originalOut, outStream);
 
     // Dummies
     private Borrower dummyBorrower;
@@ -208,10 +206,10 @@ public class BookTest {
     @Test
     public void printHoldRequestsEmpty() {
         String expected, actual;
-        expected = cleanString("\nNo Hold Requests.");
+        expected = helper.cleanString("\nNo Hold Requests.");
 
         bookInTest.printHoldRequests();
-        actual = cleanString(outStream.toString());
+        actual = helper.cleanString(outStream.toString());
 
         assertEquals(expected, actual);
     }
@@ -223,25 +221,25 @@ public class BookTest {
         bookInTest.makeHoldRequest(dummyBorrower);
         bookInTest.printHoldRequests();
 
-        expected = cleanString("\nNo Hold Requests.");
-        actual = cleanString(outStream.toString());
+        expected = helper.cleanString("\nNo Hold Requests.");
+        actual = helper.cleanString(outStream.toString());
 
         assertNotEquals(expected, actual);
     }
 
     @ParameterizedTest(name="changeBookInfo: {0}")
     @CsvSource({
-            "changeBookInfoNoChange.txt",
-            "changeBookInfoAuthor.txt",
-            "changeBookInfoSubject.txt",
-            "changeBookInfoTitle.txt",
-            "changeBookInfoAuthorSubject.txt",
-            "changeBookInfoAuthorTitle.txt",
-            "changeBookInfoSubjectTitle.txt",
-            "changeBookInfoAuthorSubjectTitle.txt"
+            "testBook/changeBookInfoNoChange.txt",
+            "testBook/changeBookInfoAuthor.txt",
+            "testBook/changeBookInfoSubject.txt",
+            "testBook/changeBookInfoTitle.txt",
+            "testBook/changeBookInfoAuthorSubject.txt",
+            "testBook/changeBookInfoAuthorTitle.txt",
+            "testBook/changeBookInfoSubjectTitle.txt",
+            "testBook/changeBookInfoAuthorSubjectTitle.txt"
     })
     public void changeBookInfo(String resourceFile) {
-        String inputContent = readFromResource(resourceFile);
+        String inputContent = helper.readFromResource(resourceFile);
         ByteArrayInputStream inStream = new ByteArrayInputStream(inputContent.getBytes());
         System.setIn(inStream);
 
@@ -250,12 +248,12 @@ public class BookTest {
             bookInTest.changeBookInfo();
         }
         catch (Exception e) {
-            printInTest(e.getMessage());
+            helper.printInTest(e.getMessage());
         }
 
-        assertEquals(bookInTest.getTitle(), equivalentBook.getTitle(), "Title should match");
-        assertEquals(bookInTest.getSubject(), equivalentBook.getSubject(), "Subject should match");
-        assertEquals(bookInTest.getAuthor(), equivalentBook.getAuthor(), "Author should match");
+        assertEquals(equivalentBook.getTitle(),bookInTest.getTitle(), "Title should match");
+        assertEquals(equivalentBook.getSubject(), bookInTest.getSubject(), "Subject should match");
+        assertEquals(equivalentBook.getAuthor(), bookInTest.getAuthor(),"Author should match");
     }
 
     @DisplayName("issueBook: Successful issue")
@@ -303,7 +301,7 @@ public class BookTest {
         else
             expected = 0;
 
-        printInTest(outStream.toString());
+        helper.printInTest(outStream.toString());
         // assertEquals(expected, newBorrower.getOnHoldBooks().size());
         assertEquals(expected, bookInTest.getHoldRequests().size());
     }
@@ -349,7 +347,7 @@ public class BookTest {
     public void issueBookNotEarliestHR() {
         Borrower newBorrower = new Borrower(-1, "New Borrower", "New Address", 0);
         HoldRequest newHoldRequest = new HoldRequest(newBorrower, bookInTest, new Date());
-        String expected = cleanString("\nSorry some other users have requested for this book earlier than you. " +
+        String expected = helper.cleanString("\nSorry some other users have requested for this book earlier than you. " +
                 "So you have to wait until their hold requests are processed.\n"), actual;
 
         bookInTest.addHoldRequest(dummyHoldRequest);
@@ -357,7 +355,7 @@ public class BookTest {
 
         bookInTest.issueBook(newBorrower, dummyStaff);
 
-        actual = cleanString(outStream.toString());
+        actual = helper.cleanString(outStream.toString());
         assertEquals(expected, actual);
         assertEquals(0, newBorrower.getBorrowedBooks().size());
     }
@@ -432,44 +430,8 @@ public class BookTest {
         else
             expected = false;
 
-        printInTest(outStream.toString());
+        helper.printInTest(outStream.toString());
         assertEquals(expected, overDueLoan.getFineStatus());
-    }
-
-    static String cleanString(String str) {
-        String newStr = str
-                .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "")
-                .replaceAll("(?m)^\\s", "");
-        String lines[] = newStr.split("\\r?\\n");
-        String res = "";
-        ArrayList<String> cleanLines = new ArrayList<String>();
-        for (int i = 1; i < lines.length; i++)
-        {
-            if(lines[i] != "")
-                cleanLines.add(lines[i]);
-        }
-        for (int i = 0; i < cleanLines.size(); i++)
-            res += cleanLines.get(i) + "\n";
-        return res;
-    }
-
-    private void printInTest(String content) {
-        System.setOut(originalOut);
-        System.out.println(content);
-        System.setOut(new PrintStream(outStream));
-    }
-
-    private String readFromResource(String fileName) {
-        String content = "";
-        String wholePath = pathToResources + fileName;
-        try {
-            content = new String(Files.readAllBytes(Paths.get(wholePath)),
-                    Charset.forName("US-ASCII"));
-
-        } catch (IOException e) {
-            printInTest(e.getMessage());
-        }
-        return content;
     }
 
     private Book updateInfoParseResource(String content, Book b) {
@@ -477,40 +439,24 @@ public class BookTest {
                 subject = b.getSubject(),
                 author = b.getAuthor();
         String lines[] = content.split("\\r?\\n");
-        printInTest("");
+        helper.printInTest("");
         int index = 0;
-        if(lines[index] == "y") {
+        if(lines[index].equals("y")) {
             index++;
             author = lines[index];
         }
         index++;
-        if(lines[index] == "y") {
+        if(lines[index].equals("y") ) {
             index++;
             subject = lines[index];
         }
         index++;
-        if(lines[index] == "y") {
+        if(lines[index].equals("y")) {
             index++;
             title = lines[index];
         }
         Book equivalentBook = new Book(-1, title, subject, author, false);
         return equivalentBook;
-    }
-
-    private String slurp(InputStream in) {
-        try {
-            StringBuilder sb = new StringBuilder();
-            Reader reader = new BufferedReader(new InputStreamReader(in));
-            int c = 0;
-            while ((c = reader.read()) != -1) {
-                sb.append((char) c);
-            }
-            return sb.toString();
-        }
-        catch (IOException e) {
-            printInTest(e.getMessage());
-            return "";
-        }
     }
 
 }

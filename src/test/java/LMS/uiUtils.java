@@ -45,6 +45,8 @@ public class uiUtils {
         System.setOut(new PrintStream(outStream));
     }
 
+    // public String inputFileParser() { }
+
     public String readFromResource(String fileName) {
         String content = "";
         String wholePath = resourcePath + fileName;

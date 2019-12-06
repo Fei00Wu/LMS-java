@@ -2,20 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/LMS/log/log2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/LoanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results - RunAllTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminLoginFail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminLoginPass.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c230.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/bookPrintHoldRequestNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/bookPrintHoldRequestNormal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoEmptyRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/borrowerPrintInfoEmptyRecords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/borrowerPrintInfoNormal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorSubject.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubjectTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorSubjectTitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorTitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoNoChange.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoNoChange.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoSubject.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubjectTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoSubjectTitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoTitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoAddress.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddressPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoAddressPhone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoName.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoName.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNameAddress.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddressPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNameAddressPhone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNamePhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNamePhone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNoUpdates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNoUpdates.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoPhone.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +52,9 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="779" />
+    <option name="myElementSize" value="603" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -59,20 +86,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW2/HW2_Code/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/testBorrower" />
+      <recent name="$PROJECT_DIR$/src/test/resources/testBook" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoanTest">
-    <configuration name="LoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainTest.mainMenuInvalid">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -81,13 +111,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
+      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanTest.payFineNonZero (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.dumbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
-      <option name="METHOD_NAME" value="payFineNonZero(double,int,char,double)" />
+      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
+      <option name="METHOD_NAME" value="dumbTest(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanTest.renewIssuedBookNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.mainMenuAdminLoginPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +142,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
-      <option name="METHOD_NAME" value="renewIssuedBookNormal" />
+      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
+      <option name="METHOD_NAME" value="mainMenuAdminLoginPass(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanTest.renewIssuedBookNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.mainMenuInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -128,14 +158,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
-      <option name="METHOD_NAME" value="renewIssuedBookNull" />
+      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
+      <option name="METHOD_NAME" value="mainMenuInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanTest.setFineStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.mainMenueAdminLoginPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -144,20 +174,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.LoanTest" />
-      <option name="METHOD_NAME" value="setFineStatus(boolean)" />
+      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
+      <option name="METHOD_NAME" value="mainMenueAdminLoginPass(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunAllTest" type="JUnit" factoryName="JUnit">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RunAllTest" />
+      <item itemvalue="JUnit.MainTest.mainMenueAdminLoginPass" />
+      <item itemvalue="JUnit.MainTest.dumbTest" />
+      <item itemvalue="JUnit.MainTest.mainMenuAdminLoginPass" />
+      <item itemvalue="JUnit.MainTest" />
+      <item itemvalue="JUnit.MainTest.mainMenuInvalid" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoanTest" />
-        <item itemvalue="JUnit.LoanTest.renewIssuedBookNull" />
-        <item itemvalue="JUnit.LoanTest.renewIssuedBookNormal" />
-        <item itemvalue="JUnit.LoanTest.setFineStatus" />
-        <item itemvalue="JUnit.LoanTest.payFineNonZero (1)" />
+        <item itemvalue="JUnit.MainTest.mainMenuInvalid" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.mainMenuAdminLoginPass" />
+        <item itemvalue="JUnit.MainTest.mainMenueAdminLoginPass" />
+        <item itemvalue="JUnit.MainTest.dumbTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,10 +258,14 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575229247242" />
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575355056651">
+    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575584182531">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575355056651" />
+    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575584182531" />
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575391512836">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575391512836" />
     <state x="521" y="343" width="867" height="425" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575256687635">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -239,62 +294,66 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="488" y="279" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575167387787" />
-    <state x="800" y="191" width="309" height="729" key="#xdebugger.evaluate" timestamp="1575329290487">
+    <state x="800" y="191" width="1046" height="759" key="#xdebugger.evaluate" timestamp="1575604936816">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="800" y="191" width="309" height="729" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1575329290487" />
+    <state x="800" y="191" width="1046" height="759" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1575604936816" />
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575324669767">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575324669767" />
-    <state width="1864" height="812" key="GridCell.Tab.0.bottom" timestamp="1575356234445">
+    <state width="1864" height="41" key="GridCell.Tab.0.bottom" timestamp="1575605735847">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="812" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234445" />
-    <state width="1864" height="812" key="GridCell.Tab.0.center" timestamp="1575356234442">
+    <state width="1864" height="41" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
+    <state width="1864" height="41" key="GridCell.Tab.0.center" timestamp="1575605735847">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="812" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234442" />
-    <state width="1864" height="812" key="GridCell.Tab.0.left" timestamp="1575356234441">
+    <state width="1864" height="41" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
+    <state width="1864" height="41" key="GridCell.Tab.0.left" timestamp="1575605735846">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="812" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234441" />
-    <state width="1864" height="812" key="GridCell.Tab.0.right" timestamp="1575356234444">
+    <state width="1864" height="41" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735846" />
+    <state width="1864" height="41" key="GridCell.Tab.0.right" timestamp="1575605735847">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="812" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575356234444" />
-    <state width="1864" height="209" key="GridCell.Tab.1.bottom" timestamp="1575355301318">
+    <state width="1864" height="41" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
+    <state width="1864" height="461" key="GridCell.Tab.1.bottom" timestamp="1575605247849">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="209" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301318" />
-    <state width="1864" height="209" key="GridCell.Tab.1.center" timestamp="1575355301317">
+    <state width="1864" height="461" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247849" />
+    <state width="1864" height="461" key="GridCell.Tab.1.center" timestamp="1575605247848">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="209" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
-    <state width="1864" height="209" key="GridCell.Tab.1.left" timestamp="1575355301317">
+    <state width="1864" height="461" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247848" />
+    <state width="1864" height="461" key="GridCell.Tab.1.left" timestamp="1575605247848">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="209" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
-    <state width="1864" height="209" key="GridCell.Tab.1.right" timestamp="1575355301317">
+    <state width="1864" height="461" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247848" />
+    <state width="1864" height="461" key="GridCell.Tab.1.right" timestamp="1575605247849">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="209" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575355301317" />
+    <state width="1864" height="461" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247849" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575233241691" />
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1575330064202">
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor" timestamp="1575356648256">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1575330064202" />
-    <state width="960" height="524" key="XDebugger.FullValuePopup" timestamp="1575235593272">
+    <state x="315" y="34" width="1280" height="1046" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1575356648256" />
+    <state width="960" height="524" key="XDebugger.FullValuePopup" timestamp="1575604649928">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="960" height="524" key="XDebugger.FullValuePopup/0.34.1920.1046@0.34.1920.1046" timestamp="1575235593272" />
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575354592928">
+    <state width="960" height="524" key="XDebugger.FullValuePopup/0.34.1920.1046@0.34.1920.1046" timestamp="1575604649928" />
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575586870096">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575354592928" />
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575586870096" />
+    <state x="707" y="346" width="495" height="420" key="export.test.results" timestamp="1575584384876">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="707" y="346" width="495" height="420" key="export.test.results/0.34.1920.1046@0.34.1920.1046" timestamp="1575584384876" />
     <state x="431" y="180" width="1057" height="752" key="find.popup" timestamp="1575167407703">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -307,6 +366,22 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575175645042" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
+          <line>279</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_updateBorrowerInfoNoUpdates.ic" NAME="BorrowerUnitTest.updateBorrowerInfoNoUpdates Coverage Results" MODIFIED="1575239130417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -324,12 +399,19 @@
     <SUITE FILE_PATH="coverage/lms$HoldRequestTest.ic" NAME="HoldRequestTest Coverage Results" MODIFIED="1575339508476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/lms$MainTest_mainMenueQuit.ic" NAME="MainTest.mainMenueQuit Coverage Results" MODIFIED="1575585982678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/lms$StaffTest.ic" NAME="StaffTest Coverage Results" MODIFIED="1575339535505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$MainTest_mainMenueAdminLogin.ic" NAME="MainTest.mainMenueAdminLogin Coverage Results" MODIFIED="1575594414205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$ClerkTest.ic" NAME="ClerkTest Coverage Results" MODIFIED="1575339493500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/lms$RunAllTest.ic" NAME="RunAllTest Coverage Results" MODIFIED="1575584200435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/lms$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1575339521067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
@@ -357,7 +439,7 @@
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575323591111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$LoanTest.ic" NAME="LoanTest Coverage Results" MODIFIED="1575356230109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$LoanTest.ic" NAME="LoanTest Coverage Results" MODIFIED="1575356455138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$LoanTest_renewIssuedBookNull.ic" NAME="LoanTest.renewIssuedBookNull Coverage Results" MODIFIED="1575356176867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -370,6 +452,9 @@
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookNotEarliestHR.ic" NAME="BookUnitTest.issueBookNotEarliestHR Coverage Results" MODIFIED="1575312050969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LMS.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lms$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1575605400649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BookUnitTest_bookConstructorTests.ic" NAME="BookUnitTest.bookConstructorTests Coverage Results" MODIFIED="1575257570881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

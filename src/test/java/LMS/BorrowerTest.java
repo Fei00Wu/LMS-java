@@ -8,7 +8,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 // Java standard
 import java.io.*;
-import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Date;
 import java.lang.*;
@@ -16,7 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 // Extra string utils
-import org.apache.commons.lang3.StringUtils;
+
 
 public class BorrowerTest {
     static String pathToResources = "src/test/resources/";
@@ -259,7 +258,7 @@ public class BorrowerTest {
     @Test
     public void testPrintInfoNormal() {
         String expectedUI = "", actualUI;
-        expectedUI = readFromResource("borrowerPrintInfoNormal.txt")
+        expectedUI = readFromResource("testBorrower/borrowerPrintInfoNormal.txt")
                 .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "");
 
         borrowerInTest.addBorrowedBook(dummyLoan);
@@ -275,7 +274,7 @@ public class BorrowerTest {
     @Test
     public void testPrintInfoEmptyRecords() {
         String expectedUI = "", actualUI;
-        expectedUI = readFromResource("borrowerPrintInfoEmptyRecords.txt")
+        expectedUI = readFromResource("testBorrower/borrowerPrintInfoEmptyRecords.txt")
                 .replaceAll("(?m)^[\\s&&[^\\n]]+|[\\s+&&[^\\n]]+$", "");
 
         borrowerInTest.printInfo();
@@ -287,14 +286,14 @@ public class BorrowerTest {
 
     @ParameterizedTest(name="updateBorrowerInfo:  {0}")
     @CsvSource({
-            "updateBorrowerInfoNoUpdates.txt",
-            "updateBorrowerInfoName.txt",
-            "updateBorrowerInfoAddress.txt",
-            "updateBorrowerInfoPhone.txt",
-            "updateBorrowerInfoNameAddress.txt",
-            "updateBorrowerInfoNamePhone.txt",
-            "updateBorrowerInfoAddressPhone.txt",
-            "updateBorrowerInfoNameAddressPhone.txt"
+            "testBorrower/updateBorrowerInfoNoUpdates.txt",
+            "testBorrower/updateBorrowerInfoName.txt",
+            "testBorrower/updateBorrowerInfoAddress.txt",
+            "testBorrower/updateBorrowerInfoPhone.txt",
+            "testBorrower/updateBorrowerInfoNameAddress.txt",
+            "testBorrower/updateBorrowerInfoNamePhone.txt",
+            "testBorrower/updateBorrowerInfoAddressPhone.txt",
+            "testBorrower/updateBorrowerInfoNameAddressPhone.txt"
     })
     public void testUpdateBorrowerInfo(String resourceFile)
     {
