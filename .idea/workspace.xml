@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test Results - RunAllTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerk.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminLoginFail.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminLoginPass.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/LMS/log/log1.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/log2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c10.dat" afterDir="false" />
@@ -18,30 +12,10 @@
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/BorrowerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/BorrowerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/uiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/bookPrintHoldRequestNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/bookPrintHoldRequestNormal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoEmptyRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/borrowerPrintInfoEmptyRecords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/borrowerPrintInfoNormal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/borrowerPrintInfoNormal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthor.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorSubject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorSubjectTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorSubjectTitle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoAuthorTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoAuthorTitle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoNoChange.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoNoChange.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoSubject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoSubjectTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoSubjectTitle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/changeBookInfoTitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBook/changeBookInfoTitle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoAddress.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoAddressPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoAddressPhone.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoName.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoName.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddress.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNameAddress.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNameAddressPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNameAddressPhone.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNamePhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNamePhone.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoNoUpdates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoNoUpdates.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/updateBorrowerInfoPhone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testBorrower/updateBorrowerInfoPhone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerk.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +62,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW2/HW2_Code/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HW3/HW3_Part2/mock/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -101,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.mainMenuInvalid">
+  <component name="RunManager" selected="JUnit.MainTest.mainAddClerk">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
@@ -117,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.dumbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.mainAddClerk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +101,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="LMS" />
       <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
-      <option name="METHOD_NAME" value="dumbTest(int)" />
+      <option name="METHOD_NAME" value="mainAddClerk" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,18 +171,18 @@
     <list>
       <item itemvalue="JUnit.RunAllTest" />
       <item itemvalue="JUnit.MainTest.mainMenueAdminLoginPass" />
-      <item itemvalue="JUnit.MainTest.dumbTest" />
       <item itemvalue="JUnit.MainTest.mainMenuAdminLoginPass" />
       <item itemvalue="JUnit.MainTest" />
       <item itemvalue="JUnit.MainTest.mainMenuInvalid" />
+      <item itemvalue="JUnit.MainTest.mainAddClerk" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.mainAddClerk" />
         <item itemvalue="JUnit.MainTest.mainMenuInvalid" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.mainMenuAdminLoginPass" />
         <item itemvalue="JUnit.MainTest.mainMenueAdminLoginPass" />
-        <item itemvalue="JUnit.MainTest.dumbTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,42 +272,42 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="800" y="191" width="1046" height="759" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1575604936816" />
-    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575324669767">
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575615686787">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575324669767" />
-    <state width="1864" height="41" key="GridCell.Tab.0.bottom" timestamp="1575605735847">
+    <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575615686787" />
+    <state width="1864" height="487" key="GridCell.Tab.0.bottom" timestamp="1575618114902">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="41" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
-    <state width="1864" height="41" key="GridCell.Tab.0.center" timestamp="1575605735847">
+    <state width="1864" height="487" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114902" />
+    <state width="1864" height="487" key="GridCell.Tab.0.center" timestamp="1575618114902">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="41" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
-    <state width="1864" height="41" key="GridCell.Tab.0.left" timestamp="1575605735846">
+    <state width="1864" height="487" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114902" />
+    <state width="1864" height="487" key="GridCell.Tab.0.left" timestamp="1575618114902">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="41" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735846" />
-    <state width="1864" height="41" key="GridCell.Tab.0.right" timestamp="1575605735847">
+    <state width="1864" height="487" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114902" />
+    <state width="1864" height="487" key="GridCell.Tab.0.right" timestamp="1575618114902">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="41" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575605735847" />
-    <state width="1864" height="461" key="GridCell.Tab.1.bottom" timestamp="1575605247849">
+    <state width="1864" height="487" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114902" />
+    <state width="1864" height="487" key="GridCell.Tab.1.bottom" timestamp="1575618114903">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="461" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247849" />
-    <state width="1864" height="461" key="GridCell.Tab.1.center" timestamp="1575605247848">
+    <state width="1864" height="487" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114903" />
+    <state width="1864" height="487" key="GridCell.Tab.1.center" timestamp="1575618114903">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="461" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247848" />
-    <state width="1864" height="461" key="GridCell.Tab.1.left" timestamp="1575605247848">
+    <state width="1864" height="487" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114903" />
+    <state width="1864" height="487" key="GridCell.Tab.1.left" timestamp="1575618114902">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="461" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247848" />
-    <state width="1864" height="461" key="GridCell.Tab.1.right" timestamp="1575605247849">
+    <state width="1864" height="487" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114902" />
+    <state width="1864" height="487" key="GridCell.Tab.1.right" timestamp="1575618114903">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="461" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575605247849" />
+    <state width="1864" height="487" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575618114903" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -366,22 +340,6 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1575175645042" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
-          <line>279</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lms$BorrowerUnitTest_updateBorrowerInfoNoUpdates.ic" NAME="BorrowerUnitTest.updateBorrowerInfoNoUpdates Coverage Results" MODIFIED="1575239130417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

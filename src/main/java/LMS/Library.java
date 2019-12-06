@@ -593,7 +593,6 @@ public class Library {
         else
             System.out.println("\nNo issued books.");                        
     }
-    
 
     
     
@@ -1215,8 +1214,6 @@ public class Library {
     } // Filling Done!  
     
     
-    
-    
-    
+
     
 }   // Library Class Closed
