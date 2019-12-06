@@ -424,48 +424,60 @@ public class Library {
     
     public void createPerson(char x)
     {
-        Scanner sc = new Scanner(System.in);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        // ---------- Modified Section ----------
+        //  Scanner sc = new Scanner(System.in);
+        // BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        // ---------- Modified Section ----------
+
               
         System.out.println("\nEnter Name: ");
         String n = "";
-        try {
-            n = reader.readLine();
-        } catch (IOException ex) {
-            Logger.getLogger(Library.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println("Enter Address: ");
         String address = "";
-        try {
-            address = reader.readLine();
-        } catch (IOException ex) {
-            Logger.getLogger(Library.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
         int phone = 0;
-        
-        try{
-            System.out.println("Enter Phone Number: ");
-            phone = sc.nextInt();
-        }
-        catch (java.util.InputMismatchException e)
-        {
-            System.out.println("\nInvalid Input.");
-        }
-            
+        // ---------- Modified Section ----------
+        // Original:
+        // try {
+        //     n = reader.readLine();
+        // } catch (IOException ex) {
+        //     Logger.getLogger(Library.class.getName()).log(Level.SEVERE, null, ex);
+        // }
+        // System.out.println("Enter Address: ");
+
+        // try {
+        //     address = reader.readLine();
+        // } catch (IOException ex) {
+        //     Logger.getLogger(Library.class.getName()).log(Level.SEVERE, null, ex);
+        // }
+        // try{
+        //     System.out.println("Enter Phone Number: ");
+        //     phone = sc.nextInt();
+        // }
+        // catch (java.util.InputMismatchException e)
+        // {
+        //     System.out.println("\nInvalid Input.");
+        // }
+
+        n = Main.consoleInput.nextLine();
+        address = Main.consoleInput.nextLine();
+        phone = Main.consoleInput.nextInt();
+        // ---------- Modified Section ----------
+
         //If clerk is to be created
         if (x == 'c')
         {
             double salary = 0;
-            
-            try{
-                System.out.println("Enter Salary: ");
-                salary = sc.nextDouble();
-            }
-            catch (java.util.InputMismatchException e)
-            {
-                System.out.println("\nInvalid Input.");
-            }
+
+            // ---------- Modified Section ----------
+//            try{
+//                System.out.println("Enter Salary: ");
+//                salary = sc.nextDouble();
+//            }
+//            catch (java.util.InputMismatchException e)
+//            {
+//                System.out.println("\nInvalid Input.");
+//            }
+            salary = Main.consoleInput.nextDouble();
+            // ---------- Modified Section ----------
             
             Clerk c = new Clerk(-1,n,address,phone,salary,-1);            
             addClerk(c);
@@ -478,15 +490,18 @@ public class Library {
         //If librarian is to be created
         else if (x == 'l')
         {
-            double salary = 0;            
-            try{
-                System.out.println("Enter Salary: ");
-                salary = sc.nextDouble();
-            }
-            catch (java.util.InputMismatchException e)
-            {
-                System.out.println("\nInvalid Input.");
-            }
+            double salary = 0;
+            // ---------- Modified Section ----------
+//            try{
+//                System.out.println("Enter Salary: ");
+//                salary = sc.nextDouble();
+//            }
+//            catch (java.util.InputMismatchException e)
+//            {
+//                System.out.println("\nInvalid Input.");
+//            }
+            salary = Main.consoleInput.nextDouble();
+            // ---------- Modified Section ----------
             
             Librarian l = new Librarian(-1,n,address,phone,salary,-1); 
             if(addLibrarian(l))
@@ -525,23 +540,33 @@ public class Library {
     // Called when want an access to Portal
     public Person login()
     {
-        Scanner input = new Scanner(System.in);
-        
+        // ---------- Modified Section ----------
+        // Scanner input = new Scanner(System.in);
+        // ---------- Modified Section ----------
+
         int id = 0;
         String password = "";
         
         System.out.println("\nEnter ID: ");
-        
-        try{
-            id = input.nextInt();
-        }
-        catch (java.util.InputMismatchException e)
-        {
-            System.out.println("\nInvalid Input");
-        }
-        
+
+        // ---------- Modified Section ----------
+//        try{
+//            id = input.nextInt();
+//        }
+//        catch (java.util.InputMismatchException e)
+//        {
+//            System.out.println("\nInvalid Input");
+//        }
+        id = Main.consoleInput.nextInt();
+//        // ---------- Modified Section ----------
         System.out.println("Enter Password: ");
-        password = input.next();
+
+        // ---------- Modified Section ----------
+        // Original: password = input.next();
+        password = Integer.toString(Main.consoleInput.nextInt());
+//        password = Main.consoleInput.nextLine();
+
+        // ---------- Modified Section ----------
         
         for (int i = 0; i < persons.size(); i++)
         {

@@ -9,7 +9,7 @@ import java.sql.*;
 public class Main 
 {
     // ---------- Modified section ----------
-    private static Scanner consoleInput;
+    public static Scanner consoleInput;
     //---------- Modified section ----------
 
     // Clearing Required Area of Screen
@@ -31,7 +31,7 @@ public class Main
         {
             System.out.println("\nEnter Choice: ");
 
-            choice = consoleInput.next();
+            choice = consoleInput.nextLine();
             // Original: choice = input.next();
 
             if((!choice.matches(".*[a-zA-Z]+.*")) && (Integer.parseInt(choice) > min && Integer.parseInt(choice) < max))
@@ -263,7 +263,7 @@ public class Main
         System.out.println("\nPress any key to continue..\n");
         //---------- Modified section ----------
         // Original: scanner.next();
-        consoleInput.next();
+        consoleInput.nextLine();
         //---------- Modified section ----------
     }
     /*-------------------------------------MAIN---------------------------------------------------*/
@@ -323,7 +323,7 @@ public class Main
                     System.out.println("\nEnter Password: ");
                     //---------- Modified section ----------
                     // Original: String aPass = admin.next();
-                    String aPass = consoleInput.next();
+                    String aPass = consoleInput.nextLine();
                     //---------- Modified section ----------
 
                     if(aPass.equals("lib"))
@@ -364,7 +364,8 @@ public class Main
                             System.out.println("\nPress any key to continue..\n");
                             //---------- Modified section ----------
                             // Original: admin.next();
-                            consoleInput.next();
+                            consoleInput.nextLine();
+                            ;
                             //---------- Modified section ----------
                         }
                     }
@@ -482,7 +483,7 @@ public class Main
                 //---------- Modified section ----------
                 // Original: Scanner scanner = new Scanner(System.in);
                 // Original: scanner.next();
-                consoleInput.next();
+                consoleInput.nextLine();
                 //---------- Modified section ----------
             }
 
