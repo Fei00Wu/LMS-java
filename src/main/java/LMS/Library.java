@@ -557,14 +557,14 @@ public class Library {
 //        {
 //            System.out.println("\nInvalid Input");
 //        }
-        id = Main.consoleInput.nextInt();
+        id = Integer.parseInt(Main.consoleInput.nextLine().trim());
 //        // ---------- Modified Section ----------
         System.out.println("Enter Password: ");
 
         // ---------- Modified Section ----------
         // Original: password = input.next();
-        password = Integer.toString(Main.consoleInput.nextInt());
-//        password = Main.consoleInput.nextLine();
+        // password = Integer.toString(Main.consoleInput.nextInt());
+        password = Main.consoleInput.nextLine();
 
         // ---------- Modified Section ----------
         

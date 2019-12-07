@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaffde-beb0-4341-88d6-6f625012fc3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminMenu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/ClerkMenu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/LibrarianMenu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginClerkSuccess.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginClerkWrongPassword.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginClerkWrongUser.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginLibrarianSuccess.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginLibrarianWrongPassword.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testMain/userLoginLibrarianWrongUser.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/LMS/log/log3.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/log/log.ctrl" afterDir="false" />
@@ -21,10 +13,9 @@
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Database/LMS/seg0/c251.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/Database/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LMS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LMS/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LMS/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testMain/AdminAddClerkAndLibrarian.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +26,7 @@
     <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="902" />
+    <option name="myElementSize" value="399" />
   </component>
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
@@ -84,7 +75,53 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RunAllTest">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BookTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.BorrowerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibrarianTest.clerkConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.LibrarianTest" />
+      <option name="METHOD_NAME" value="clerkConstructorTest(int,java.lang.String,java.lang.String,int,double,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lms" />
       <extension name="coverage">
@@ -96,70 +133,6 @@
       <option name="PACKAGE_NAME" value="LMS" />
       <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.adminMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
-      <option name="METHOD_NAME" value="adminMenuTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.clerkMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
-      <option name="METHOD_NAME" value="clerkMenu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.librarianMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
-      <option name="METHOD_NAME" value="librarianMenu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.mainUserLoginFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LMS" />
-      <option name="MAIN_CLASS_NAME" value="LMS.MainTest" />
-      <option name="METHOD_NAME" value="mainUserLoginFailure(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,21 +150,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StaffTest.staffConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LMS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LMS" />
+      <option name="MAIN_CLASS_NAME" value="LMS.StaffTest" />
+      <option name="METHOD_NAME" value="staffConstructorTest(int,java.lang.String,java.lang.String,int,double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.RunAllTest" />
       <item itemvalue="JUnit.MainTest" />
-      <item itemvalue="JUnit.MainTest.adminMenuTest" />
-      <item itemvalue="JUnit.MainTest.mainUserLoginFailure" />
-      <item itemvalue="JUnit.MainTest.librarianMenu" />
-      <item itemvalue="JUnit.MainTest.clerkMenu" />
+      <item itemvalue="JUnit.LibrarianTest.clerkConstructorTest" />
+      <item itemvalue="JUnit.StaffTest.staffConstructorTest" />
+      <item itemvalue="JUnit.BookTest" />
+      <item itemvalue="JUnit.BorrowerTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.clerkMenu" />
-        <item itemvalue="JUnit.MainTest.librarianMenu" />
-        <item itemvalue="JUnit.MainTest.mainUserLoginFailure" />
-        <item itemvalue="JUnit.MainTest.adminMenuTest" />
+        <item itemvalue="JUnit.BorrowerTest" />
+        <item itemvalue="JUnit.BookTest" />
+        <item itemvalue="JUnit.StaffTest.staffConstructorTest" />
+        <item itemvalue="JUnit.LibrarianTest.clerkConstructorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,10 +230,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="455" y="136" width="1000" height="839" key="#Project_Structure/0.34.1920.1046@0.34.1920.1046" timestamp="1575663165493" />
-    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575674798243">
+    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575689465189">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575674798243" />
+    <state x="414" y="207" width="1282" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575689465189" />
     <state x="100" y="132" width="1720" height="848" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575663736671">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -265,10 +254,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="439" y="470" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575229257661" />
-    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575176314338">
+    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575682391375">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.34.1920.1046@0.34.1920.1046" timestamp="1575176314338" />
+    <state x="667" y="391" width="585" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.34.1920.1046@0.34.1920.1046" timestamp="1575682391375" />
     <state width="933" height="554" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog" timestamp="1575167387788">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -277,46 +266,46 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="488" y="279" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1575167387787" />
-    <state x="800" y="191" width="1046" height="759" key="#xdebugger.evaluate" timestamp="1575674266466">
+    <state x="328" y="312" width="1046" height="768" key="#xdebugger.evaluate" timestamp="1575694366923">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="800" y="191" width="1046" height="759" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1575674266466" />
+    <state x="328" y="312" width="1046" height="768" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1575694366923" />
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1575615686787">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1575615686787" />
-    <state width="1864" height="832" key="GridCell.Tab.0.bottom" timestamp="1575674839874">
+    <state width="1864" height="832" key="GridCell.Tab.0.bottom" timestamp="1575694595729">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="832" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575674839874" />
-    <state width="1864" height="832" key="GridCell.Tab.0.center" timestamp="1575674839872">
+    <state width="1864" height="832" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575694595729" />
+    <state width="1864" height="832" key="GridCell.Tab.0.center" timestamp="1575694595729">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="832" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575674839872" />
-    <state width="1864" height="832" key="GridCell.Tab.0.left" timestamp="1575674839872">
+    <state width="1864" height="832" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575694595729" />
+    <state width="1864" height="832" key="GridCell.Tab.0.left" timestamp="1575694595728">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="832" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575674839872" />
-    <state width="1864" height="832" key="GridCell.Tab.0.right" timestamp="1575674839873">
+    <state width="1864" height="832" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575694595728" />
+    <state width="1864" height="832" key="GridCell.Tab.0.right" timestamp="1575694595729">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="832" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575674839873" />
-    <state width="1864" height="533" key="GridCell.Tab.1.bottom" timestamp="1575674768203">
+    <state width="1864" height="832" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575694595729" />
+    <state width="1864" height="390" key="GridCell.Tab.1.bottom" timestamp="1575694518582">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="533" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575674768203" />
-    <state width="1864" height="533" key="GridCell.Tab.1.center" timestamp="1575674768201">
+    <state width="1864" height="390" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1575694518582" />
+    <state width="1864" height="390" key="GridCell.Tab.1.center" timestamp="1575694518582">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="533" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575674768201" />
-    <state width="1864" height="533" key="GridCell.Tab.1.left" timestamp="1575674768201">
+    <state width="1864" height="390" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1575694518582" />
+    <state width="1864" height="390" key="GridCell.Tab.1.left" timestamp="1575694518581">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="533" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575674768201" />
-    <state width="1864" height="533" key="GridCell.Tab.1.right" timestamp="1575674768202">
+    <state width="1864" height="390" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1575694518581" />
+    <state width="1864" height="390" key="GridCell.Tab.1.right" timestamp="1575694518582">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="533" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575674768202" />
+    <state width="1864" height="390" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1575694518582" />
     <state x="377" y="132" width="1155" height="848" key="Maven.ArtifactSearchDialog" timestamp="1575233241691">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -329,10 +318,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="960" height="524" key="XDebugger.FullValuePopup/0.34.1920.1046@0.34.1920.1046" timestamp="1575604649928" />
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575586870096">
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575683870541">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575586870096" />
+    <state x="424" y="79" width="1061" height="954" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1575683870541" />
     <state x="707" y="346" width="495" height="420" key="export.test.results" timestamp="1575674837007">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -357,6 +346,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/LMS/Library.java</url>
           <line>565</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
+          <line>377</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Library.java</url>
+          <line>561</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Library.java</url>
+          <line>570</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LMS/Main.java</url>
+          <line>431</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -389,7 +398,7 @@
     <SUITE FILE_PATH="coverage/lms$ClerkTest.ic" NAME="ClerkTest Coverage Results" MODIFIED="1575339493500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$RunAllTest.ic" NAME="RunAllTest Coverage Results" MODIFIED="1575674803590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lms$RunAllTest.ic" NAME="RunAllTest Coverage Results" MODIFIED="1575689472577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/lms$LibrarianTest.ic" NAME="LibrarianTest Coverage Results" MODIFIED="1575339521067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
@@ -429,7 +438,7 @@
     <SUITE FILE_PATH="coverage/lms$LibrianUnitTest.ic" NAME="LibrianUnitTest Coverage Results" MODIFIED="1575228064690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BorrowerTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575339479030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$BorrowerTest.ic" NAME="BorrowerTest Coverage Results" MODIFIED="1575685627988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lms$BookUnitTest_issueBookNotEarliestHR.ic" NAME="BookUnitTest.issueBookNotEarliestHR Coverage Results" MODIFIED="1575312050969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -447,7 +456,7 @@
     <SUITE FILE_PATH="coverage/lms$StaffUnitTest.ic" NAME="StaffTest Coverage Results" MODIFIED="1575323654856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/lms$BookTest.ic" NAME="BookTest Coverage Results" MODIFIED="1575339558020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/lms$BookTest.ic" NAME="BookTest Coverage Results" MODIFIED="1575685418830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LMS.*</FILTER>
     </SUITE>
   </component>

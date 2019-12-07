@@ -365,7 +365,7 @@ public class Main
                             //---------- Modified section ----------
                             // Original: admin.next();
                             consoleInput.nextLine();
-                            ;
+
                             //---------- Modified section ----------
                         }
                     }
